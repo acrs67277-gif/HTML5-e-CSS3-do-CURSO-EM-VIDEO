@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens Dinâmicas</title>
+    <title>Mídias em HTML5</title>
 </head>
 <body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>
+        Tente abrir esta página em diferentes navegadores para ver como a imagem muda.
+    </p>
     
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>
+        Vamos aprender a reproduzir áudio em HTML5.
+    </p>
+    <audio src="midia/On The Flip - The Grey Room _ Density & Time.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG -->
 </body>
 </html>
