@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML5</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #8f8f8f;
+            margin: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav > a {
+            margin: 20px;
+            color: rgb(241, 214, 61);
+            background-color: rgba(0, 0, 0, 0.089);
+            padding: 12px;
+            font-weight: bold;
+            margin-right: 30px;
+            border-radius: 0.2em;
+        }
+
+        nav a:hover {
+            background-color: #8f8f8f;
+            color: red;
+            transition: 0.001ms;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 10px;
+            margin: 9px;
+        }
+
+        article {
+            background-color: darkgray;
+            padding: 5px;
+        }
+
+        arcticle > aside, p > i {
+            background-color: rgb(255, 253, 253);
+        }
+
+        i:hover {
+            background-color: azure;
+            color: rgb(57, 57, 235);
+            transition: 0.2ms;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            margin: 10px;
+        }
+
+        #assuntos {
+            background-color: #000000;
+            color: #fff;
+            font-size: 1.3em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Loja</a>
+            <a href="#">Inscreva-se</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <h2>Noticia sobre o Brasil</h2>
+            <article>
+                <h3>Artigo I</h3>
+                <p>
+                    1. As tags de agrupamento são usadas para organizar e estruturar o conteúdo em um documento HTML5.
+                </p>
+
+                <aside>
+                    <p>Artigo escrito por <a href="#"><i>José da Silva</i></a></p>
+                </aside>
+            </article>
+
+            <article>
+                <h3>Artigo II</h3>
+                <p>
+                    2. A tag &lt;section&gt; é usada para agrupar conteúdo relacionada, como artigos, notícias ou seções de um site.
+                </p>
+                <aside>
+                    <p>Artigo escrito por <a href="#"><i>Maria de Souza</i></a></p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo o <a href="https://www.cursoemvideo.com/" target="_blank" rel="external"><i>CursoemVideo</i></a></p>
+    </footer>
+</body>
+</html>
