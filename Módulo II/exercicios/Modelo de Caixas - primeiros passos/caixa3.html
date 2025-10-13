@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas decoradas</title>
+    <style>
+        h1 {
+            border: 10px solid transparent;
+            padding: 11px;
+            /*
+                border-image: url('img/borda.png');
+                border-image-slice: 39;
+                border-image-repeat: repeat;
+            */
+
+            border-image: url('img/borda.png') 39 repeat;
+
+            margin: auto;
+            background-color: #fff;
+        }
+
+        body {
+            background-color: #4b4b4b7c;
+            color: #111;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Teste de borda</i></h1>
+</body>
+</html>
