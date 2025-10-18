@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body {
+    background-color: #3DDBB4;
+    font-family: 'idroid.otf', Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+header p {
+    background-color: #365a47;
+    text-align: center;
+    color: #4FB17B;
+    font-size: 20px;
+    padding: 12px;
+}
+
+main {
+    background-color: #fff;
+    width: 70em;
+    height: 100%;
+    margin: auto;
+}
+
+footer {
+    background-color: #365a47;
+    text-align: center;
+    color: #4FB17B;
+    font-size: 17px;
+}
