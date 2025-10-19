@@ -1,9 +1,41 @@
 @charset "utf-8";
 
+/*
+    #4FB17B
+    #52866A
+    #3DDB84
+    #485C51
+    #2C332F
+    #23332A
+*/
+
+:root {
+    --cor-1: #4FB17B;
+    --cor-2: #52866A;
+    --cor-3: #3DDB84;
+}
+
 body {
-    background-color: #3DDBB4;
+    background-color: #4FB17B;
+    font-weight: bold;
+}
+
+header > h1 {
+    color: #3DDBB4;
+}
+
+header > p {
+    color: #3DDBB4;
 }
 
 main {
     background-color: #fff;
+}
+
+main h1, h2 {
+    color: #3DDB84;
+}
+
+aside h3 {
+    color: #3DDB84;
 }
