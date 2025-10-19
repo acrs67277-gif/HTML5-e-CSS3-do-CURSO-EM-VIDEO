@@ -6,10 +6,11 @@
     <title>Responsividade para site</title>
     <style>
         body {
-            background-color: #000;
+            background-color: #000000;
             color: #554d4d;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: justify;
+            margin: 10px;
         }
 
         main {
@@ -23,7 +24,9 @@
 
         main h1 {
             font-family: 'Times New Roman', Times, serif;
-            color: #29c785;
+            color: #34eca0;
+            background-color: #52866A;
+            text-align: center;
         }
 
         main p {
@@ -37,16 +40,37 @@
             display: block;
             margin: auto;
         }
+
+        div#r-001 > p {
+            background-color: #385a48;
+            margin-top: 10px;
+            border: 12px solid #3DDB84;
+            color: #fff;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            padding: 12px;
+            border-radius: 0.5em;
+        }
+
+        div#r-001 > p a:hover {
+            background-color: red;
+            color: yellow;
+        }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>Testando Responsividade</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+            <strong><i>Lorem ipsum</i></strong> dolor sit amet consectetur adipisicing elit. Unde modi, 
             dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
             facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
-            suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+            suscipit molestiae.<strong><i>Lorem ipsum</i></strong> dolor sit amet consectetur adipisicing elit. Unde modi, 
             dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
             facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
             suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
@@ -57,10 +81,10 @@
                 <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">                 
                 <img src="imagens/irina-blok.jpg" alt="Irina Blok">
             </picture>
-            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+            <br> <strong><i>Lorem ipsum</i></strong> dolor sit amet consectetur adipisicing elit. Unde modi, 
             dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
             facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
-            suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+            suscipit molestiae.<strong><i>Lorem ipsum</i></strong>  dolor sit amet consectetur adipisicing elit. Unde modi, 
             dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
             facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
             suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
@@ -68,6 +92,34 @@
             facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
             suscipit molestiae.
         </p>
+        <div id="r-001">
+            <p>
+                <strong style="background-color: #080808; border: 1px solid #5dfd01; border-radius: 0.2em; padding: 3px;"><i><a href="">Lorem ipsum</a></i></strong>dolor sit amet consectetur adipisicing elit. Unde modi, 
+                dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
+                facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
+                suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+                dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
+                facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
+                suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+                dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
+                facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
+                suscipit molestiae.
+            </p>
+        </div>
+        <div id="r-001">
+            <p>
+                <strong style="background-color: #000000; border: 1px solid #5dfd01; border-radius: 0.2em; padding: 3px;"><i></i><a href="">Lorem ipsum</a></strong> dolor sit amet consectetur adipisicing elit. Unde modi, 
+                dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
+                facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
+                suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+                dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
+                facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
+                suscipit molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi, 
+                dignissimos minus quas ipsum facilis dolorum quasi? Facilis minima 
+                facere dicta doloribus accusamus quibusdam eaque, itaque laudantium quia, 
+                suscipit molestiae.
+            </p>
+        </div>
     </main>
 </body>
 </html>
