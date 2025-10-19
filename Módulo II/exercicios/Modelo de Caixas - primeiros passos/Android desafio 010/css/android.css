@@ -1,41 +1,120 @@
 @charset "utf-8";
 
-/*
-    #4FB17B
-    #52866A
-    #3DDB84
-    #485C51
-    #2C332F
-    #23332A
-*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
 
 :root {
     --cor-1: #4FB17B;
     --cor-2: #52866A;
     --cor-3: #3DDB84;
+    --cor-4: #485C51;
+    --cor-5: #2C332F;
+    --cor-6: #23332A;
+
+    --fonte-padrão: Arial, Verdana, Helvietica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #4FB17B;
-    font-weight: bold;
+    background-color: var(--cor-1);
+    font-family: var(--fonte-padrão);
+}
+
+header {
+    background-color: var(--cor-4);
+    text-align: center;
 }
 
 header > h1 {
-    color: #3DDBB4;
+    color: #fff;
+    font-family: var(--fonte-destaque);
 }
 
 header > p {
-    color: #3DDBB4;
+    color: #fff;
+    font-family: var(--fonte-destaque);
 }
 
 main {
     background-color: #fff;
+    padding: 10px;
+    width:800px;
+    margin: auto;
 }
 
-main h1, h2 {
-    color: #3DDB84;
+main h1 {
+    color: var(--cor-5);
+    font-family: var(--font-android);
+    background-color: var(--cor-3);
+}
+
+main h2 {
+    color: var(--cor-6);
+    font-family: var(--font-android);
+    background-color: var(--cor-3);
+}
+
+nav {
+    background-color: var(--cor-6);
+}
+
+a {
+    text-decoration: none;
+}
+
+aside {
+    background-color: var(--cor-3);
+    border: 1px solid #00000023;
+    box-shadow: 1px 1px 4px #52866A;
+    border-radius: 0.1em;
 }
 
 aside h3 {
-    color: #3DDB84;
+    color: #fff;
+    background-color: var(--cor-1);
+    padding: 10px;
+    font-family: var(--fonte-padrão);
+}
+
+aside li {
+    list-style: none;
+}
+
+article li {
+    list-style: none;
+}
+
+footer {
+    background-color: var(--cor-2);
+    text-align: center;
+}
+
+footer a {
+    color: #b8b6b6;
+}
+
+footer > p {
+    color: #fff;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+footer > p > a:hover {
+    color: var(--cor-3);
+    border: 1px solid var(--cor-6);
+    padding: 5px;
+    border-radius: 0.2em;
+    transition: 0.2ms;
 }
