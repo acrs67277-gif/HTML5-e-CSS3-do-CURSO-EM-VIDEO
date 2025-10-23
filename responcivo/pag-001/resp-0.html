@@ -6,24 +6,30 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
             font-size: 1.2em;
-            line-height: 1.3em;
-            background-color: #4cff05;
+            background-color: #000000;
+        }
+
+        header {
+            background-color: #c5c7c5;
         }
 
         header, h1 {
-            background-color: #35a309;
-            color: #fff;
+            color: #000000;
             padding: 0.001em;
             text-align: center;
         }
 
         main {
             background-color: #bebdbd;
-            min-width: 400px;
-            max-width: 800px;
+            width: 800px;
+            max-height: 800px;
             margin: auto;
             border: 1px solid #000;
             padding: 19px;
@@ -36,22 +42,16 @@
         }
 
         a {
-            background-color: black;
             text-decoration: none;
-            color: #ffffff;
-        }
-
-        a:hover {
-            color: red;
-            transition: 0.2ms;
+            color: #ff0000;
         }
 
         footer {
-            padding: 9px;
+            padding-top: 20px;
         }
 
         footer p {
-            background-color: #35a309;
+            background-color: #c5c7c5;
         }
     </style>
 </head>
@@ -60,7 +60,7 @@
         <h1>Teste de Responsividade</h1>
     </header>
     <main>
-        <div id="r-002">
+        <div>
             <p class="r-003">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum condimentum quam, ut aliquet lorem. 
                 Pellentesque facilisis dictum lobortis. Nulla et interdum magna. Fusce placerat, nulla eget gravida laoreet, 
@@ -72,6 +72,7 @@
                 Phasellus rhoncus lorem id semper rhoncus. Mauris hendrerit nisi quis est tincidunt venenatis. 
                 Etiam aliquam semper eros ac rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, 
                 nascetur ridiculus mus.
+                
             </p>
             <p class="r-003">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum condimentum quam, ut aliquet lorem. 
@@ -84,12 +85,31 @@
                 Phasellus rhoncus lorem id semper rhoncus. Mauris hendrerit nisi quis est tincidunt venenatis. 
                 Etiam aliquam semper eros ac rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, 
                 nascetur ridiculus mus.
+                Phasellus rhoncus lorem id semper rhoncus. Mauris hendrerit nisi quis est tincidunt venenatis. 
+                Etiam aliquam semper eros ac rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, 
+                nascetur ridiculus mus.
             </p>
+
+            <p class="r-003">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum condimentum quam, ut aliquet lorem. 
+                    Pellentesque facilisis dictum lobortis. Nulla et interdum magna. Fusce placerat, nulla eget gravida laoreet, 
+                    nulla ante tempus arcu, a lacinia enim massa sollicitudin turpis. Donec nulla lectus, imperdiet ut augue quis, 
+                    dapibus convallis risus. Nulla rhoncus urna id hendrerit euismod. Pellentesque habitant morbi tristique senectus 
+                    et netus et malesuada fames ac turpis egestas. Duis eleifend convallis nisl id vestibulum. Etiam feugiat, metus vitae 
+                    blandit pellentesque, odio magna lacinia augue, et blandit erat odio vitae arcu. Donec arcu massa, convallis id quam ac, 
+                    posuere aliquet ipsum. Mauris massa arcu, facilisis eu quam a, faucibus hendrerit libero. 
+                    Phasellus rhoncus lorem id semper rhoncus. Mauris hendrerit nisi quis est tincidunt venenatis. 
+                    Etiam aliquam semper eros ac rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus.
+                    Phasellus rhoncus lorem id semper rhoncus. Mauris hendrerit nisi quis est tincidunt venenatis. 
+                    Etiam aliquam semper eros ac rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus.
+                </p>
         </div>
     </main>
     <footer>
         <p style="text-align: center; font-family: Arial, serif; font-size: 14px; color: #000000;">
-            <button type="submit"><a href="../reponsivo.html">VOLTAR</a></button> <br>
+            <button type="submit"><a href="../reponsivo.html"><strong><i>VOLTAR</i></strong></a></button> <br>
             &copy; 2024 Responsividade para site. Todos os direitos reservados.
         </p>
 </body>
