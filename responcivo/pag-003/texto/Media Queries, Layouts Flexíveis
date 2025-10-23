@@ -1,0 +1,85 @@
+Media Queries (Consultas de Mídia, em português) são um recurso fundamental do CSS3 (Cascading Style Sheets) que permite que você aplique estilos CSS diferentes em seu site, dependendo das características do dispositivo que está sendo usado para visualizá-lo.
+
+Elas são a base do Web Design Responsivo, que é a prática de criar sites que se adaptam e oferecem uma experiência de visualização otimizada em uma ampla variedade de dispositivos, como:
+
+    # Telas de computadores (desktops)
+
+    #Tablets
+
+    # Smartphones
+
+    # Impressoras
+
+    # Dispositivos de fala (leitores de tela)
+
+Como funcionam?
+Uma Media Query consiste em:
+
+    1. Tipo de Mídia (Media Type): O tipo de dispositivo para o qual o estilo se aplica (ex: screen para telas, print para impressão, all para todos).
+
+    2. Expressão: Uma condição que verifica características específicas do dispositivo ou da área de visualização (viewport).
+
+Se o dispositivo atender às condições da expressão, os estilos CSS definidos dentro da Media Query serão aplicados.
+
+Exemplos de Características (Media Features):
+As características que você pode testar incluem:
+
+    # width e height (Largura e altura da área de visualização)
+
+    # min-width e max-width (Largura mínima e máxima) - muito usados para definir os chamados breakpoints.
+
+    # orientation (Orientação do dispositivo, como landscape - paisagem/deitado - ou portrait - retrato/em pé).
+
+    # resolution (Resolução da tela).
+
+Sintaxe Básica:
+A sintaxe no CSS é a seguinte:
+=======================================================================================================================================
+@media <tipo de mídia> and (<expressão>) {
+  /* Estilos CSS a serem aplicados quando a condição for verdadeira */
+}
+Exemplo prático:
+
+Para mudar a cor de fundo do corpo do documento para azul apenas quando a largura da tela for no mínimo 768 pixels (tamanho comum para tablets):
+=======================================================================================================================================
+@media screen and (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+=======================================================================================================================================
+Layouts Flexíveis (ou Flexible Layouts) são um conceito essencial no Web Design Responsivo que se refere à construção de páginas da web cujos componentes (blocos, imagens, textos) se ajustam e se reorganizam de forma fluida e adaptável ao tamanho da tela e ao dispositivo do usuário.
+
+A ideia central é usar medidas relativas em vez de medidas fixas (como pixels) para as dimensões dos elementos.
+
+Princípios Chave dos Layouts Flexíveis:
+    1. Medidas Relativas:
+
+        # Em vez de definir uma largura de coluna como 300px, você a define como uma porcentagem (30%). Isso garante que a coluna sempre ocupará uma proporção do espaço disponível, independentemente do tamanho da tela.
+
+        # Medidas como em, rem, vw (viewport width) e vh (viewport height) também são usadas para tamanhos de fonte e outros elementos, garantindo que tudo seja dimensionado de forma proporcional.
+
+2. Grades (Grids) Fluidas:
+
+        # O layout é organizado em um sistema de colunas que se expandem e contraem conforme o espaço da tela muda.
+
+        # O objetivo é evitar barras de rolagem horizontais e garantir que o conteúdo nunca fique esmagado em telas pequenas ou muito   esticado em telas grandes.
+
+3. Flexbox e CSS Grid:
+
+    # Essas são as tecnologias modernas do CSS projetadas especificamente para criar layouts flexíveis de forma eficiente:
+
+        # Flexbox (Flexible Box Layout): É ideal para alinhamento e distribuição de elementos em uma dimensão (linha OU coluna), sendo perfeito para componentes como barras de navegação ou cartões.
+
+        # CSS Grid: É usado para layouts de duas dimensões (linhas E colunas), sendo a ferramenta preferida para a estrutura principal e complexa da página.
+
+Importância
+A flexibilidade é vital para o design moderno porque:
+
+    # Experiência do Usuário (UX): Garante que o site seja fácil de ler e usar em qualquer dispositivo, desde um smartphone com tela pequena até um monitor 4K.
+
+    # Aumento de Dispositivos: Com a proliferação de smartphones, tablets e outros dispositivos com telas de todos os tamanhos, um layout flexível é a única maneira de garantir que o conteúdo seja acessível a todos.
+
+SEO (Otimização para Mecanismos de Busca): O Google prioriza sites que são amigáveis para dispositivos móveis (mobile-friendly), e layouts flexíveis são o que torna isso possível.
+
+Em resumo, se as Media Queries (a que você perguntou anteriormente) são as "regras" que dizem quando o layout deve mudar, os Layouts Flexíveis (usando porcentagens, Flexbox e Grid) são a "forma" de garantir que o layout possa mudar de maneira suave e eficiente.
