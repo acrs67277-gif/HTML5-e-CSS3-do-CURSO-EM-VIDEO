@@ -4,19 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Media Queries</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em;
-            font-weight: normal;
+            background-color: blueviolet;
+            color: rgb(2, 2, 2);
         }
 
         header {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: green;
-            color: rgb(255, 255, 255);
-            text-align: justify;
+            background: #fff;
+            color: red;
+            margin: 12px;
+        }
+
+        main {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            background: #ccc;
+            margin: auto;
+        }
+
+        main > h1 {
+            background-color: black;
+            color: #fff;
+        }
+
+        main > h2 {
+            background-color: blue;
+            color: #fff;
+        }
+
+        main > h3 {
+            background-color: yellow;
+            color: brown;
+        }
+
+        main > ul li {
+            background-color: rgb(150, 149, 146);
+        }
+
+        footer {
+            text-align: center;
+            background: #fff;
+            margin: 32px;
         }
     </style>
 </head>
@@ -28,58 +58,47 @@
         </p>
     </header>
     <main>
-         <section>
-            <ul>
-                <li><strong><i>Telas de computadores (desktops)</i></strong></li>
-                <li><strong><i>Tablets</i></strong></li>
-                <li><strong><i>Smartphones</i></strong></li>
-                <li><strong><i>Impressoras</i></strong></li>
-                <li><strong><i>Dispositivos de fala (leitores de tela)</i></strong></li>
+        <ul style="list-style: none;">
+            <li>Telas de computadores (desktops)</li>
+            <li>Tablets</li>
+            <li>Smartphones</li>
+            <li>Impressoras</li>
+            <li>Dispositivos de fala (leitores de tela)</li>
+        </ul>
+    <h1>Como funcionam?</h1>
+        <h2>Uma Media Query consiste em:</h2>
+            <ul style="list-style: none;">
+                <li><i>1. Tipo de Mídia (Media Type):</i> O tipo de dispositivo para o qual o estilo se aplica (ex: screen para telas, print para impressão, all para todos).</li>
+                <li><i>2. Expressão:</i> Uma condição que verifica características específicas do dispositivo ou da área de visualização (viewport).</li>
             </ul>
-        </section>
-<h1>Como funcionam?</h1>
-    <h2>Uma Media Query consiste em:</h2>
-        <section>
-            <ol>
-                <li><strong><i>1. Tipo de Mídia (Media Type):</i></strong> O tipo de dispositivo para o qual o estilo se aplica (ex: screen para telas, print para impressão, all para todos).</li>
-                <li><strong><i>2. Expressão:</i></strong> Uma condição que verifica características específicas do dispositivo ou da área de visualização (viewport).</li>
-            </ol>
-            <p>Se o dispositivo atender às condições da expressão, os estilos CSS definidos dentro da Media Query serão aplicados.</p>
-        </section>
-<h2>Exemplos de Características <strong><i></i>(Media Features)</strong>:</h2>
-    <h3>As características que você pode testar incluem:</h3>
-        <section>
-            <ol>
-                <li><strong><i>width e height (Largura e altura da área de visualização)</i></strong></li>
-                <li><strong><i>min-width e max-width (Largura mínima e máxima) - muito usados para definir os chamados breakpoints.</i></strong></li>
-                <li><strong><i>orientation (Orientação do dispositivo, como landscape - paisagem/deitado - ou portrait - retrato/em pé).</i></strong></li>
-                <li><strong><i>resolution (Resolução da tela).</i></strong></li>
-            </ol>
-        </section>
-<h2>Sintaxe Básica:</h2>
-    <h3>A sintaxe no CSS é a seguinte:</h3>
-        <pre>
-            <code>
-                <strong>
-                    @media <code><tipo de mídia> and (<code><expressão></code>)</code> {
-                    /* Estilos CSS a serem aplicados quando a condição for verdadeira */
-                    }
-                </strong>
+            <p style="color: rgb(226, 43, 217);">Se o dispositivo atender às condições da expressão, os estilos CSS definidos dentro da Media Query serão aplicados.</p>
+    <h2>Exemplos de Características <strong><i></i>(Media Features)</strong>:</h2>
+        <h3>As características que você pode testar incluem:</h3>
+            <ul style="list-style: none;">
+                <li>width e height (Largura e altura da área de visualização)</li>
+                <li>min-width e max-width (Largura mínima e máxima) - muito usados para definir os chamados breakpoints.</li>
+                <li>orientation (Orientação do dispositivo, como landscape - paisagem/deitado - ou portrait - retrato/em pé).</li>
+                <li>resolution (Resolução da tela).</li>
+            </ul>
+    <h2>Sintaxe Básica:</h2>
+        <h3>A sintaxe no CSS é a seguinte:</h3>
+            <code style="color: rgb(5, 88, 88);">
+                @media tipo de mídia and (expressão) { <br>
+                /* Estilos CSS a serem aplicados quando a condição for verdadeira */
+                }
             </code>
-        </pre>
-<h2>Exemplo prático:</h2>
-    <p>Para mudar a cor de fundo do corpo do documento para azul apenas quando a largura da tela for no mínimo 768 pixels (tamanho comum para tablets):</p>
-        <pre>
-            <code>
-                <strong>
-                    @media screen and (min-width: 768px) {
-                        body {
-                             background-color: lightblue;
+    <h2>Exemplo prático:</h2>
+        <p>Para mudar a cor de fundo do corpo do documento para azul apenas quando a largura da tela for no mínimo 768 pixels (tamanho comum para tablets):</p>
+            <code style="color: rgb(5, 88, 88);">
+                @media screen and (min-width: 768px) { <br>
+                    body {
+                         background-color: lightblue;
                     }
                     }
-                </strong>
-            </code>
-        </pre>
+            </code>     
     </main>
+    <footer>
+        <p>Teste de Responsividade</p>
+    </footer>
 </body>
 </html>
