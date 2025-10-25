@@ -3,53 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <title>Layouts Flexíveis</title>
     <style>
         body {
-            background-color: #000;
+            background-color: #0579fd;
             font-family: Arial, Helvetica, sans-serif;
             color: #6e6e6e;
+            font-size: 1em;
         }
 
         section {
-            text-align: justify;
+            background: #fff;
+            padding: 10px;
+        }
+
+        h1, h2 {
+            background-color: #194d8a;
+            font-family: serif;
+            color: #fff;
+        }
+
+        h3 {
+            background-color: #194d8a;
+            color: #fff;
+            font-family: serif;
+        }
+
+        div {
+            margin: 1em 0;
+            line-height: 1.3;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid black;
+            border-radius: 0.3em;
+            box-shadow: 1px 1px 1px 1px rgb(5, 5, 5);
+        }
+
+        #flexível {
+            list-style: none;
+            font-family: 'Times New Roman', Times, serif;
+            color: green;
+        }
+
+        footer> p a {
+            text-decoration: none;
+        }
+
+        footer> p a:hover {
+            background: black;
+            color: white;
+            transition: 0.2ms;
+        }
+
+        .flexível {
+            font-family: sans-serif;
+            color: #0579fd;
+        }
+
+        footer> p {
+            text-align: center;
+            background-color: #194d8a;
+            color: white;
+            padding: 12px;
         }
     </style>
 </head>
 <body>
     <section>
         <div>
-            <i>Layouts Flexíveis</i> (ou Flexible Layouts) são um conceito essencial no Web Design Responsivo que se refere à construção de páginas da web cujos componentes (blocos, imagens, textos) se ajustam e se reorganizam de forma fluida e adaptável ao tamanho da tela e ao dispositivo do usuário.
-            A ideia central é usar medidas relativas em vez de medidas fixas (como pixels) para as dimensões dos elementos.
+            <i style="color: red;">Layouts Flexíveis</i> (ou Flexible Layouts) são um conceito essencial no Web Design Responsivo que se refere à construção de páginas da web cujos componentes (blocos, imagens, textos) se ajustam e se reorganizam de forma fluida e adaptável ao tamanho da tela e ao dispositivo do usuário.
+            <p style="background-color: #194e8a; color: white; text-align: justify; margin: 10px;">A ideia central é usar medidas relativas em vez de medidas fixas (como pixels) para as dimensões dos elementos.</p>
         </div>
         
         <h1>Princípios Chave dos Layouts Flexíveis:</h1>
             <h2>1. Medidas Relativas:</h2>
-            <ul>
+            <ul id="flexível">
                 <li>Em vez de definir uma largura de coluna como 300px, você a define como uma porcentagem (30%). Isso garante que a coluna sempre ocupará uma proporção do espaço disponível, independentemente do tamanho da tela.</li>
                 <li>Medidas como em, rem, vw (viewport width) e vh (viewport height) também são usadas para tamanhos de fonte e outros elementos, garantindo que tudo seja dimensionado de forma proporcional.</li>
             </ul>
 
         <h2>2. Grades (Grids) Fluidas:</h2>
-            <ul>
+            <ul id="flexível">
                 <li>O layout é organizado em um sistema de colunas que se expandem e contraem conforme o espaço da tela muda.</li>
                 <li>O objetivo é evitar barras de rolagem horizontais e garantir que o conteúdo nunca fique esmagado em telas pequenas ou muito   esticado em telas grandes.</li>
             </ul>
                 
         <h2>3. Flexbox e CSS Grid:</h2>
 
-            <p>Essas são as tecnologias modernas do CSS projetadas especificamente para criar layouts flexíveis de forma eficiente:</p>
-                <ul>
+            <p class="flexível">Essas são as tecnologias modernas do CSS projetadas especificamente para criar layouts flexíveis de forma eficiente:</p>
+                <ul id="flexível">
                     <li>Flexbox (Flexible Box Layout): É ideal para alinhamento e distribuição de elementos em uma dimensão (linha OU coluna), sendo perfeito para componentes como barras de navegação ou cartões.</li>
                     <li>CSS Grid: É usado para layouts de duas dimensões (linhas E colunas), sendo a ferramenta preferida para a estrutura principal e complexa da página.</li>
                 </ul>
                
         <h3>Importância</h3>
-        <p>A flexibilidade é vital para o design moderno porque:</p>
-        <ul>
-            <li>Experiência do Usuário (UX): Garante que o site seja fácil de ler e usar em qualquer dispositivo, desde um smartphone com tela pequena até um monitor 4K.</li>
-            <li>Aumento de Dispositivos: Com a proliferação de smartphones, tablets e outros dispositivos com telas de todos os tamanhos, um layout flexível é a única maneira de garantir que o conteúdo seja acessível a todos.</li>
-        </ul>        
+        <p class="flexível">A flexibilidade é vital para o design moderno porque:</p>
+            <ul id="flexível">
+                <li>Experiência do Usuário (UX): Garante que o site seja fácil de ler e usar em qualquer dispositivo, desde um smartphone com tela pequena até um monitor 4K.</li>
+                <li>Aumento de Dispositivos: Com a proliferação de smartphones, tablets e outros dispositivos com telas de todos os tamanhos, um layout flexível é a única maneira de garantir que o conteúdo seja acessível a todos.</li>
+            </ul>        
         <div>
             SEO (Otimização para Mecanismos de Busca): O Google prioriza sites que são amigáveis para dispositivos móveis (mobile-friendly), e layouts flexíveis são o que torna isso possível.
             Em resumo, se as Media Queries (a que você perguntou anteriormente) são as "regras" que dizem quando o layout deve mudar, os Layouts Flexíveis (usando porcentagens, Flexbox e Grid) são a "forma" de garantir que o layout possa mudar de maneira suave e eficiente.
