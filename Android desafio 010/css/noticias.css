@@ -27,3 +27,86 @@ main {
     padding: 20px;
     margin-bottom: 30px;
 }
+
+main h2 {
+    background-color: #1f824c;
+    color: #3ee6bc;
+    margin: 11px;
+    padding: 9px;
+    text-align: justify;
+}
+
+main h3 {
+    background-color: #3ee6bc48;
+    color: #166161;
+    margin: 11px;
+    padding: 9px;
+}
+
+div.noticias {
+    background-color: #3ee6bc9e;
+    margin: 12px;
+    padding: 11px;
+    text-indent: -10px;
+    text-align: justify;
+    color: #000;
+    font-size: 1.1em;
+  
+}
+
+div.noticias ul li {
+    list-style: none;
+}
+
+div.not-I {
+    background-color: #3ee6bc;
+    margin: 9px;
+    padding: 8px;
+    text-indent: -9px;
+    text-align: justify;
+    color: #333;
+    text-align: center;
+}
+
+div.not-I ul li {
+    list-style: none;
+}
+
+div.not-I ul li a {
+    text-decoration: none;
+    color: #044f26;
+}
+
+div.not-I ul li a:hover {
+    color: #ff1493;
+    transition: 0.1ms;
+}
+
+p#android {
+    color: #434343;
+    text-indent: 10px;
+}
+
+p#android i {
+    color: #186e43;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #23332A;
+    color: #ffffff;
+    text-align: center;
+    margin: 3px;
+    padding: 2px;
+}
+
+footer ul li, a {
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+}
+
+footer ul li a:hover {
+    color: #ff1493;
+    transition: 0.1ms;
+}
