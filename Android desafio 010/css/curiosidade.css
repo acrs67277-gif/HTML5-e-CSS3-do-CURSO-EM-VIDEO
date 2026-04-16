@@ -1,29 +1,97 @@
 @charset "utf-8";
 
 body {
-    background-color: #3DDBB4;
-    font-family: 'idroid.otf', Geneva, Tahoma, sans-serif;
+    background-color: #4FB17B;
+    font-family: 'Times New Roman', Times, serif;
     text-align: justify;
+    color: #23332A;
+}
+
+header {
+    background-color: #23332A;
+    color: #f7f7f7;
+    text-align: justify;
+    padding: 8px;
+    margin: 8px;
+    font-weight: normal;
 }
 
 header p {
-    background-color: #365a47;
-    text-align: center;
-    color: #4FB17B;
-    font-size: 20px;
-    padding: 12px;
+    font-size: 1.3em;
 }
 
 main {
-    background-color: #fff;
-    width: 70em;
-    height: 100%;
-    margin: auto;
+    background-color: #f7f7f7;
+    min-width: 450px;
+    margin: 9px;
+    padding: 2px;
+    margin-bottom: 10px;
 }
 
-footer {
-    background-color: #365a47;
+main h1, main h2 {
+    background-color: #23332A;
+    color: #fff;
+    margin: 8px;
+    padding: 8px;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+main h3 {
+    background-color: #2c332f00;
+    color: #000000;
+    margin: 7px;
+    padding: 7px;
+    text-align: justify;
+    font-size: 1.1em;
+    font-weight: 100%;
+}
+
+p#curiosidade {
+    background-color: #3ddb8400;
+    color: #5e4f4f;
+    margin: 8px;
+    padding: 8px;
+    text-align: justify;
+    font-size: 0.97em;
+    text-indent: 9px;
+}
+
+ul.andrioide, li {
+    background-color: #5e4f4f;
+    color: #f7f7f7;
+    margin: 11px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 0.99em;
+    text-indent: 8px;
+    list-style: none;
+    border: 1px solid #3DDB84;
+    box-shadow: 1px 1px 4px 3px #00000062;
+    margin-right: 30px;
+    border-radius: 0.2em;
+}
+
+footer.rodape {
+    background-color: #2C332F;
+    color: #fff;
+    margin: 7px;
+    padding: 6px;
+    text-align: justify;
+    font-size: 1.0em;
+}
+
+footer p#roda, a {
+    background-color: #28835100;
+    color: #fff;
+    padding: 7px;
+    margin: 7px;
+    text-decoration: none;
     text-align: center;
-    color: #4FB17B;
-    font-size: 17px;
+}
+
+footer p#roda a:hover {
+    color: rgb(3, 255, 3);
+    transition: 0.1ms;
 }
