@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body {
+            background-image: url('../Imagens/wallpaper001.jpg');
+            text-align: center;
+        }
+
+        div.quadrado {
+            border: 2px solid #000;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            border-radius: 9px;
+            background-color: lightgray;
+        }
+
+        div#q-1 {
+            background-color: darkmagenta;
+        }
+        
+        div#q-2 {
+            background-image: linear-gradient(to bottom, red, yellow);
+        }
+
+        div#q-3 {
+            background-image: url('../Imagens/pattern001.png');
+        }
+
+        div p {
+            color: #fff;
+            margin: 10px;
+            text-align: center;
+        }
+
+        div.quadrado {
+            margin: 11px;
+            padding: 11px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white; text-align: center;">Olá, Mundo!!!</h1>
+        <div class="quadrado" id="q-1">
+            <p>
+                Este é o quadrado 1, com fundo colorido.
+            </p>
+        </div>
+        <div class="quadrado" id="q-2">
+            <p>
+                Este é o quadrado 2, com fundo degradê.
+            </p>
+        </div>
+        <div class="quadrado" id="q-3">
+            <p>
+                Este é o quadrado 3, com fundo de imagem.
+            </p>
+        </div>
+</body>
+</html>
