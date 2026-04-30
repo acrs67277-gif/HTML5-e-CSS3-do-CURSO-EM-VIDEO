@@ -1,0 +1,40 @@
+@charset "utf=8";
+
+body {
+    background-color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+header p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    background-color: red;
+    color: darkgray;
+    padding: 9px;
+    transition: 1ms;
+    border-radius: 5%;
+    border: 1px solid white;
+}
