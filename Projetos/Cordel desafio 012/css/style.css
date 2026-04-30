@@ -1,5 +1,15 @@
 @charset "utf=8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+:root {
+    --fontI: Verdana, Geneva, Tahoma, sans-serif;
+    --fontII: "Bebas Neue", cursive;
+    --fontIII: "Great Vibes", cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,8 +18,10 @@
 html, body {
     background-color: darkcyan;
     color: #fff;
-    font-family: 'Times New Roman', Times, serif;
     min-height: 100vh;
+    font-family: var(--fontI);
+    font-size: 20px;
+    font-weight: bold;
 }
 
 header {
@@ -22,6 +34,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fontII);
+    font-size: 10vw;
 }
 
 header p a {
@@ -54,29 +68,47 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fontIII);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
-    background-color: #afafaf;
-    color: rgb(187, 40, 167);
-    font-size: 1em;
+    background-color: #ffffff;
+    color: rgb(189, 13, 180);
 }
 
 section.imagem {
     background-color: rgb(0, 0, 247);
-    color: #fff;
+    color: #ffffff;
+    box-shadow: inset 6px 6px 13px 0px #000;
+    /* Efeito Parallax */
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 500px;
-    background-color: #2222229a;
+    display: inline-block;
+    background-color: #000000a9;
+    padding: 5px;
+    text-shadow: 2px 2px 0px #000;
+}   
+
+section#img-I {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img-II {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
 }
 
 footer p a:hover {
-    background-color: red;
-    color: darkgray;
+    color: rgb(255, 0, 0);
     padding: 9px;
     transition: 1ms;
-    border-radius: 5%;
-    border: 1px solid white;
 }
