@@ -1,9 +1,15 @@
 @charset "utf=8";
 
-body {
-    background-color: yellow;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: darkcyan;
+    color: #fff;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
+    min-height: 100vh;
 }
 
 header {
@@ -13,9 +19,21 @@ header {
     padding: 12px;
 }
 
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
 header p a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+header p a:hover {
+    text-decoration: underline;
+    color: red;
+    transition: 0.1ms;
 }
 
 footer {
@@ -28,6 +46,30 @@ footer {
 footer p a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: #afafaf;
+    color: rgb(187, 40, 167);
+    font-size: 1em;
+}
+
+section.imagem {
+    background-color: darkblue;
+    color: #fff;
+}
+
+section.imagem > p {
+    width: 500px;
+    background-color: #2222229a;
 }
 
 footer p a:hover {
