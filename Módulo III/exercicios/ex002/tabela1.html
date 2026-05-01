@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            background-color: #000;
+            color: white;
+            padding: 9px;
+        }
+
+        table {
+            width: 500px;
+            height: 500px;
+            border-collapse: separate;
+            border: 2px solid #000;
+            padding: 10px;
+        }
+
+        td {
+            border: 2px solid rgb(255, 0, 0);
+            padding: 7px;
+            background-color: rgba(146, 1, 146, 0.356);
+        }
+
+        td.dado {
+            background-color: orange;
+        }
+
+        tr.linha {
+            background-color: green;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Hieraquia de Tabelas (simples)
+        TABLE = tabela
+            table row = linha de tabela
+            table header = cabeçalho de tabela
+            table data = dado de tabela
+    -->
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td class="dado">A-1</td>
+            <td>B-2</td>
+            <td>C-3</td>
+            <td>D-4</td>
+        </tr>
+        <tr class="linha"> <!-- Segunda linha -->
+            <td>E-5</td>
+            <td>E-6</td>
+            <td>F-7</td>
+            <td>G-8</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>I-10</td>
+            <td>J-11</td>
+            <td class="dado">K-12</td>
+            <td>L-13</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>M-14</td>
+            <td class="dado">N-15</td>
+            <td>O-16</td>
+            <td>P-17</td>
+        </tr>
+    </table>
+</body>
+</html>
