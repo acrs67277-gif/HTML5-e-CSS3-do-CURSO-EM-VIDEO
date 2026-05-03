@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio (parte 1)</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 9px;
+            background-color: rgba(0, 25, 252, 0.363);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 600px;
+            margin: auto;
+            padding: 10px;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+        td {
+            border: 3px solid #56721e;
+            padding: 8px;
+        }
+
+        td.t-001 {
+            background-color: red;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td.t-002 {
+            background-color: goldenrod;
+            text-align: center;
+        }
+
+        td#t-003 {
+            background-color: blueviolet;
+            text-align: center;
+        }
+
+        td#t-004 {
+            background-color: darkgray;
+        }
+
+        td#t-005 {
+            background-color: darkblue;
+            color: white;
+        }
+
+        td#t-006 {
+            background-color: pink;
+            text-align: center;
+        }
+
+        td.t-007 {
+            background-color: #ff00f2b2;
+            text-align: center;
+        }
+
+        div.importancia {
+            background-color: aliceblue;
+            text-align: justify;
+            width: 500px;
+            margin: auto;
+            padding: 12px;
+        }
+
+        footer {
+            text-align: center;
+            color: darkblue;
+            padding: 9px;
+            margin: 9px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela - 001</h1>
+        <table>
+            <tr>
+                <td colspan="4" class="t-001">L-001</td>
+                <td rowspan="5" style="background-color: yellow;">L-002</td>
+                <td class="t-007">L-003</td>
+                <td class="t-007">L-004</td>
+                <td class="t-007">L-005</td>
+                <td rowspan="3" class="t-001">L-006</td>
+            </tr>
+            <tr>
+                <td rowspan="5" id="t-006">L-007</td>
+                <td rowspan="2" id="t-003">L-008</td>
+                <td rowspan="3" class="t-007">L-009</td>
+                <td rowspan="5" id="t-004">L-010</td>
+                <td id="t-003">L-011</td>
+                <td colspan="2" id="t-006">L-012</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="t-001">L-013</td>
+                <td id="t-005">L-014</td>
+                <td colspan="2" class="t-002">L-015</td>
+                <td id="t-003" rowspan="3">L-016</td>
+                <td id="t-003">L-017</td>
+                <td id="t-003" rowspan="3">L-018</td>
+            </tr>
+            <tr>
+                <td id="t-004">L-019</td>
+                <td id="t-006">L-020</td>
+                <td id="t-004">L-021</td>
+                <td colspan="2" id="t-003">L-022</td>
+                <td id="t-005">L-023</td>
+                <td id="t-005">L-024</td>
+            </tr>
+            <tr>
+                <td id="t-005">L-025</td>
+                <td id="t-005">L-026</td>
+                <td colspan="3" class="t-001">L-027</td>
+                <td id="t-006">L-028</td>
+                <td rowspan="4" class="t-002">L-029</td>
+                <td id="t-006">L-030</td>
+            </tr>
+        </table>
+        <hr style="border: 4px solid #000;">
+        <div class="importancia">
+            <p>
+                O uso de tabelas em sites é fundamental para a organização, clareza <br>
+                e acessibilidade de dados estruturados. Embora não devam ser <br>
+                usadas para layout (disposição de elementos da página), elas são a <br>
+                ferramenta correta para exibir informações comparativas, técnicas ou <br>
+                numéricas. <br>
+                Aqui estão os principais pontos sobre a importância do uso de tabelas: <br>
+                <ul>
+                    <li>
+                        Organização e Legibilidade: Tabelas sintetizam grandes <br>
+                        quantidades de dados, tornando a leitura mais rápida e objetiva.
+                    </li>
+                    <li>
+                        Comparação Eficiente: Facilitam a comparação de valores, <br>
+                        características ou especificações (ex: tabelas de preços, medidas, <br>
+                        ou especificações técnicas).
+                    </li>
+                    <li>
+                        Acessibilidade: Tabelas estruturadas corretamente <br>
+                        com tags HTML específicas (como <code>thead/thead, tbody, th/th</code>) <br> 
+                        permitem que leitores de tela para deficientes visuais compreendam o contexto das informações.
+                    </li>
+                    <li>
+                        SEO (Otimização para Motores de Busca): Dados <br>
+                        tabulares bem estruturados ajudam motores de <br>
+                        busca como o Google a entenderem melhor o conteúdo, o <br>
+                        que pode melhorar o ranqueamento.
+                    </li>
+                    <li>
+                        Contextualização: Elas permitem vincular dados a <br>
+                        cabeçalhos específicos, evitando a perda de <br>
+                        contexto do que está sendo lido. <br>
+                        
+                    </li>
+                </ul>
+            </p>
+            <h2>Boas práticas:</h2>
+                <ul>
+                    <li>Utilize tabelas apenas para dados tabulares, não para o design da página.</li>
+                    <li>
+                        Garanta que a tabela seja "responsiva" para que se <br>
+                        ajuste a telas de dispositivos móveis.
+                    </li>
+                </ul>
+        </div>
+    <footer>
+        <p>
+            <strong><i>A IA pode cometer erros. Por isso, cheque as respostas</i></strong>
+        </p>
+    </footer>
+</body>
+</html>
