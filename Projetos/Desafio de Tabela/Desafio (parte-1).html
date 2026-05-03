@@ -78,6 +78,42 @@
             margin: 9px;
             font-size: 20px;
         }
+
+        hr {
+            border-radius: 100%;
+        }
+
+        p#tab-I {
+            text-indent: -10px;
+            margin: 12px;
+            padding: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana serif;
+            color: red;
+        }
+
+        p#tab-II {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 12px;
+            border-radius: 0.2em;
+        }
+
+        ul > li {
+            list-style: none;
+
+        }
+
+        strong > i {
+            color: rgb(255, 0, 200);
+        }
+
+        p.tag-III, ul, li {
+            background-color: darkblue;
+            color: #fff;
+            padding: 4px;
+            margin: 4px;
+            border-radius: 0.3em;
+        }
     </style>
 </head>
 <body>
@@ -126,54 +162,61 @@
         </table>
         <hr style="border: 4px solid #000;">
         <div class="importancia">
-            <p>
-                O uso de tabelas em sites é fundamental para a organização, clareza <br>
-                e acessibilidade de dados estruturados. Embora não devam ser <br>
-                usadas para layout (disposição de elementos da página), elas são a <br>
-                ferramenta correta para exibir informações comparativas, técnicas ou <br>
-                numéricas. <br>
+            <p id="tab-I">
+                <i>
+                    O uso de tabelas em sites é fundamental para a organização, clareza <br>
+                    e acessibilidade de dados estruturados. Embora não devam ser <br>
+                    usadas para layout (disposição de elementos da página), elas são a <br>
+                    ferramenta correta para exibir informações comparativas, técnicas ou <br>
+                    numéricas.
+                </i>
+            </p>
+            <p id="tab-II">
                 Aqui estão os principais pontos sobre a importância do uso de tabelas: <br>
+            </p>
                 <ul>
                     <li>
-                        Organização e Legibilidade: Tabelas sintetizam grandes <br>
+                        <strong><i>Organização e Legibilidade:</i></strong> Tabelas sintetizam grandes <br>
                         quantidades de dados, tornando a leitura mais rápida e objetiva.
                     </li>
                     <li>
-                        Comparação Eficiente: Facilitam a comparação de valores, <br>
+                        <strong><i>Comparação Eficiente:</i></strong> Facilitam a comparação de valores, <br>
                         características ou especificações (ex: tabelas de preços, medidas, <br>
                         ou especificações técnicas).
                     </li>
                     <li>
-                        Acessibilidade: Tabelas estruturadas corretamente <br>
+                        <strong><i>Acessibilidade:</i></strong> Tabelas estruturadas corretamente <br>
                         com tags HTML específicas (como <code>thead/thead, tbody, th/th</code>) <br> 
                         permitem que leitores de tela para deficientes visuais compreendam o contexto das informações.
                     </li>
                     <li>
-                        SEO (Otimização para Motores de Busca): Dados <br>
+                        <strong><i>SEO (Otimização para Motores de Busca):</i></strong> Dados <br>
                         tabulares bem estruturados ajudam motores de <br>
                         busca como o Google a entenderem melhor o conteúdo, o <br>
                         que pode melhorar o ranqueamento.
                     </li>
                     <li>
-                        Contextualização: Elas permitem vincular dados a <br>
+                        <strong><i>Contextualização:</i></strong> Elas permitem vincular dados a <br>
                         cabeçalhos específicos, evitando a perda de <br>
                         contexto do que está sendo lido. <br>
-                        
                     </li>
                 </ul>
-            </p>
             <h2>Boas práticas:</h2>
-                <ul>
-                    <li>Utilize tabelas apenas para dados tabulares, não para o design da página.</li>
-                    <li>
-                        Garanta que a tabela seja "responsiva" para que se <br>
-                        ajuste a telas de dispositivos móveis.
-                    </li>
-                </ul>
+                <p class="tab-III">
+                    <ul>
+                        <li>
+                            Utilize tabelas apenas para dados tabulares, não para o design da página.
+                        </li>
+                        <li>
+                            Garanta que a tabela seja "responsiva" para que se <br>
+                            ajuste a telas de dispositivos móveis.
+                        </li>
+                    </ul>
+                </p>
         </div>
     <footer>
         <p>
-            <strong><i>A IA pode cometer erros. Por isso, cheque as respostas</i></strong>
+            <strong>A IA pode cometer erros. Por isso, cheque as respostas</strong>
         </p>
     </footer>
 </body>
