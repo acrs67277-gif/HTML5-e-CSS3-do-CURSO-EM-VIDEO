@@ -21,6 +21,16 @@
             padding: 9px;
             margin: 8px;
         }
+
+        div.vento, p#vent {
+            border: 1px solid red;
+            border-radius: 0.5em;
+            width: 300px;
+            margin: auto;
+            padding: 10px;
+            box-shadow: 1px 1px 1px #0000008f;
+        }
+
         footer {
             text-align: center;
             color: darkblue;
@@ -29,49 +39,46 @@
             font-size: 20px;
         }
 
-        div.vento, p {
-            border: 1px solid red;
-            border-radius: 0.5em;
-            width: 300px;
-            margin: auto;
-            padding: 10px;
-            box-shadow: 1px 1px 1px #0000008f;
+        footer > p > a {
+            text-decoration: none;
+            color: rgb(88, 85, 85);
+        }
+
+        footer > p > a:hover {
+            color: rgb(0, 255, 0);
+            transition: 0.1ms;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
-        <h1>Aló, Novo Mundo!</h1>
-            <div class="vento">
-                <p>
-                    O Desenho do Vento <br>
-                    Não sei se é dia ou se é rastro, <br>
-                    se é sombra de pássaro ou de mar. <br>
-                    Sei que o tempo desenha um mastro <br>
-                    no navio que não pode aportar. <br>
-
-                    A vida é um fio de seda, <br>
-                    no tear do silêncio a girar; <br>
-                    o que se ganha, se herda, <br>
-                    o que se perde, é o luar. <br>
-
-                    Não me perguntes o destino, <br>
-                    nem o peso da flor no chão. <br>
-                    Sou apenas um som repentino <br>
-                    na palma da tua mão. <br>
-
-                    Tudo é rito, tudo é vento, <br>
-                    espelho de água a tremer. <br>
-                    O eterno mora no momento <br>
-                    em que deixamos de ser.
-                </p>
-            </div>
+    <h1>Aló, Novo Mundo!</h1>
+        <div class="vento">
+            <p id="vent">
+                O Desenho do Vento <br>
+                Não sei se é dia ou se é rastro, <br>
+                se é sombra de pássaro ou de mar. <br>
+                Sei que o tempo desenha um mastro <br>
+                no navio que não pode aportar. <br>
+                A vida é um fio de seda, <br>
+                no tear do silêncio a girar; <br>
+                o que se ganha, se herda, <br>
+                o que se perde, é o luar. <br>
+                Não me perguntes o destino, <br>
+                nem o peso da flor no chão. <br>
+                Sou apenas um som repentino <br>
+                na palma da tua mão. <br>
+                Tudo é rito, tudo é vento, <br>
+                espelho de água a tremer. <br>
+                O eterno mora no momento <br>
+                em que deixamos de ser.
+            </p>
+        </div>
     <footer>
         <p>
-            <strong>A IA pode cometer erros. Por isso, cheque as respostas</strong>
-            <br>
+            <strong>A IA pode cometer erros. Por isso, cheque as respostas</strong> <br>
             <a href="../teste2.html" target="_self" rel="external">VOLTAR</a>
-        </p>
+        </p> 
     </footer>
 </body>
 </html>
