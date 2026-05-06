@@ -52,7 +52,6 @@
 
         td#circ {
             text-align: center;
-            background-color: rgb(82, 82, 82);
         }
 
         td > section {
@@ -64,23 +63,11 @@
             margin: auto;
         }
 
-        td.r-001 > div {
-            padding: 11px;
-            margin: 11px;
-            text-indent: 12px;
-            background-color: #000;
+        td.r-001 {
+            padding: 9px;
+            margin: 9px;
             color: #fff;
-            border: 4px solid red;
-            border-radius: 5px;
         }
-
-        td.r-001 > div, p#r-I {
-            padding: 11px;
-            margin: 11px;
-            color: #fff;
-            border-radius: 1em;
-        }
-
     </style>
 </head>
 <body>
@@ -88,7 +75,6 @@
     <table>
         <tr>
             <td id="cinza"><img src="img/l.png" alt="cubo"></td>
-            <td><div class="cinza"></div></td>
             <td class="cin">
                 <p>
                     <i>
@@ -97,27 +83,21 @@
                     </i>
                 </p>
             </td>
-            <td id="circ" rowspan="2"><img src="img/ddd.png" alt="cículo"></td>
+            <td id="circ"><img src="img/ddd.png" alt="cículo"></td>
         </tr>
         <tr>
-            <td rowspan="3"><section></section></td>
-            <td rowspan="3">II</td>
-            <td rowspan="3">III</td>
-            <td rowspan="3" style="background-color: #000; color: antiquewhite;">IV</td>
+            <td>I</td>
+            <td>II</td>
+            <td>III</td>
         </tr>
         <tr>
-            <td class="r-001" rowspan="2">
-                <div><p id="r-I"></p></div>
-            </td>
-            <td><a href="t-a1/test2.html" target="_self" rel="external">Fadas</a></td>
-            <td rowspan="3">3</td>
-            <td rowspan="3">4</td>
+            <td style="text-align: center;"><a href="#">VOLTAR</a></td>
+            <td style="text-align: center;"><a href="t-a1/test2.html" target="_self" rel="external">Fadas</a></td>
+            <td style="text-align: center;"><a href="">RETORNAR</a></td>
         </tr>
         <tr>
-            <td><a href="t-a1/test1.html" target="_self" rel="external">CLIQUE</a></td>
-            <td>B</td>
-            <td>C</td>
-            <td id="cinza"><i>Na de sua vida ela encontrou vida.</i></td>
+            <td style="text-align: center;"><a href="t-a1/test1.html" target="_self" rel="external">CLIQUE</a></td>
+            <td colspan="3"><i>Na de sua vida ela encontrou vida.</i></td>
         </tr>
     </table>
 </body>
