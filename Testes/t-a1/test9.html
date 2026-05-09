@@ -4,73 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>She-Ra: A Princesa do Poder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000;
+            color: #fff;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1em;
+            padding: 12px;
+        }
+
+        header.corpo {
+            background-color: rgb(1, 90, 255);
+            padding: 6px;
+            margin: 6px;
+            text-indent: 14px;
+        }
+
+        header.corpo h1 {
+            background-color: blueviolet;
+            padding: 7px;
+            margin: 7px;
+            text-align: center;
+        }
+
+        header.corpo h2 {
+            background-color: blueviolet;
+            padding: 6px;
+            margin: 6px;
+            text-align: center;
+        }
+
+        header.corpo h3 {
+            background-color: yellow;
+            color: #000;
+            font-weight: bold;
+            padding: 6px;
+            margin: 6px;
+        }
+
+        aside > p#tex {
+            color: red;
+            padding: 6px;
+            margin: 6px;
+        }
+
+        div.lista, ul, li {
+            list-style: none;
+            margin: auto;
+            padding: 5px;
+            text-align: justify;
+            border: 1px double deeppink;
+            border-radius: 0.1em;
+        }
+
+        footer, p a:hover {
+            text-align: center;
+            color: darkblue;
+            background-color: #ffc400;
+            text-decoration: none;
+            transition: 0.1ms;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
+    <header class="corpo">
         <h1>She-Ra: A Princesa do Poder</h1>
-            <p>
+            <p id="tex">
                 Lançada em 1985, a série expandiu o universo para o planeta <i>Etheria</i>, 
                 introduzindo um tom mais político de rebelião e resistência.
             </p>
         <h3>A Trama</h3>
             <aside>
-                <p>
+                <p id="tex">
                     Descobrimos que Adam tinha uma irmã gêmea, <i>Adora</i>, que foi sequestrada ainda bebê por <i>Hordak</i>, 
                     o mestre de Esqueleto. Ela foi levada para Etheria e criada para ser uma capitã da <i>Horda Infernal</i>, 
                     sem saber de sua origem.
                 </p>
-                <p>
+                <p id="tex">
                     He-Man viaja para Etheria e entrega a Adora a <i>Espada da Proteção</i>. Ao descobrir a verdade, 
                     ela se transforma em <i>She-Ra</i> e decide liderar a <i>Rebelião</i> contra a tirania de Hordak. 
                     Enquanto He-Man defende um reino estabelecido, She-Ra luta como uma guerrilheira para libertar um povo oprimido.
                 </p>
             </aside>
         <h2>Principais Personagens de Etheria</h2>
-            <ul>
-                <li>
-                    <i>She-Ra / Princesa Adora:</i>A líder da Rebelião, dotada de força sobre-humana e uma espada que se transforma em diversos objetos.
-                </li>
-                <li>
-                    <i>Ventania (Swift Wind):</i>O cavalo de Adora que se transforma em um unicórnio alado.
-                </li>
-                <li>
-                    <i>Arqueiro (Bow):</i>Um arqueiro habilidoso e um dos poucos homens na Rebelião principal.
-                </li>
-                <li>
-                    <i>Cintilante (Glimmer):</i>Princesa da Lua Brilhante e fundadora da Rebelião.
-                </li>
-                <li>
-                    <i>Madame Razzo:</i>Uma bruxa idosa e atrapalhada que vive na Floresta do Sussurro.
-                </li>
-                <li>
-                    <i>Hordak:</i>O implacável líder da Horda, capaz de transformar partes de seu corpo em máquinas e armas.
-                </li>
-                <li>
-                    <i>Sombria (Shadow Weaver):</i>Uma poderosa e sombria feiticeira que serve a Hordak.
-                </li>
-                <li>
-                    <i>Felina (Catra):</i>A capitã da guarda da Horda e principal rival de Adora.
-                </li>
-            </ul>
+            <div class="lista">
+                <ul>
+                    <li>
+                        <i>She-Ra / Princesa Adora:</i>A líder da Rebelião, dotada de força sobre-humana e uma espada que se transforma em diversos objetos.
+                    </li>
+                    <li>
+                        <i>Ventania (Swift Wind):</i>O cavalo de Adora que se transforma em um unicórnio alado.
+                    </li>
+                    <li>
+                        <i>Arqueiro (Bow):</i>Um arqueiro habilidoso e um dos poucos homens na Rebelião principal.
+                    </li>
+                    <li>
+                        <i>Cintilante (Glimmer):</i>Princesa da Lua Brilhante e fundadora da Rebelião.
+                    </li>
+                    <li>
+                        <i>Madame Razzo:</i>Uma bruxa idosa e atrapalhada que vive na Floresta do Sussurro.
+                    </li>
+                    <li>
+                        <i>Hordak:</i>O implacável líder da Horda, capaz de transformar partes de seu corpo em máquinas e armas.
+                    </li>
+                    <li>
+                        <i>Sombria (Shadow Weaver):</i>Uma poderosa e sombria feiticeira que serve a Hordak.
+                    </li>
+                    <li>
+                        <i>Felina (Catra):</i>A capitã da guarda da Horda e principal rival de Adora.
+                    </li>
+                </ul>
+            </div>
+            
         <h2>O Conexão entre os Dois Mundos</h2>
             <aside>
-                <p>
+                <p id="tex">
                     A relação entre os dois irmãos é o coração da franquia. No filme <i>O Segredo da Espada</i>, 
                     que serve de ponte entre as séries, fica claro que ambos são os pilares de equilíbrio do universo.
                 </p>
-                <p>
+                <p id="tex">
                     <i>Curiosidade:</i> Enquanto He-Man foca em força bruta e defesa, She-Ra frequentemente utiliza estratégia, 
                     empatia e a capacidade de curar seres vivos, refletindo uma abordagem diferente de heroísmo.
                 </p>
             </aside>
         <h3>Legado</h3>
             <aside>
-                <p>
-                    Ambas as séries foram criadas pela <i>Filmation</i> com o objetivo original de vender brinquedos da Mattel, 
+                <p id="tex">
+                    Ambas as séries foram criadas pela <a href="https://en.wikipedia.org/wiki/Filmation" target="_blank" rel="external"><i>Filmation</i> </a>com o objetivo original de vender brinquedos da Mattel, 
                     mas acabaram se tornando ícones culturais devido às suas lições de moral ao final de cada episódio e ao 
                     rico design de personagens que mistura mitologia nórdica com ficção científica <i>pulp</i>.
                 </p>
-                <p>
+                <p id="tex">
                     Qual desses dois universos você acha mais interessante: as batalhas mágicas de Eternia ou a rebelião tecnológica de Etheria?
                 </p>
             </aside>
@@ -80,9 +151,5 @@
             Texto gerado por IA. <a href="../index2.html" target="_self" rel="external">VOLTAR</a>
         </p>
     </footer>
-    
-
-    
-
 </body>
 </html>
