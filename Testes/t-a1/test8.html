@@ -26,10 +26,18 @@
             text-indent: 12px;
         }
 
-        header.corpo h1 {
+        header.corpo > h1 {
             background: blueviolet;
             padding: 3px;
             margin: 2px;
+            border-radius: 1px 7px 1px 7px;
+            border: 2px solid #fff;
+        }
+
+        header.corpo > h2, h3 {
+            background-color: #ff00ff;
+            border-radius: 1px 7px 1px 7px;
+            border: 2px solid #fff;
         }
 
         header.corpo p#tex {
@@ -41,13 +49,13 @@
         }
 
         div.lista, ul, li {
-            border: 1px double #dd5ea2;
+            border: 2px double #dd5ea2;
             color: #b6b6b6;
             text-align: justify;
             margin: 5px;
             padding: 5px;
             list-style: none;
-            border-radius: 0.3em;
+            border-radius: 1px 7px 1px 7px;
         }
 
         footer > p, a {
@@ -56,6 +64,7 @@
             margin: 10px;
             color: aliceblue;
             text-align: center;
+            border-radius: 1px 7px 1px 7px;
         }
 
         footer, p, a:hover {
