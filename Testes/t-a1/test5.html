@@ -4,61 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragão Ball</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 7px;
+            margin: 7px;
+            background-color: blue;
+            color: azure;
+        }
+
+        header.corpo > h1 {
+            background: rgb(139, 0, 0);
+            text-align: center;
+            padding: 2px;
+            margin: 1px;
+        }
+
+        header.corpo {
+            margin: auto;
+            background: #fff;
+            color: rgb(255, 4, 255);
+            font-size: 16px;
+            font-weight: bold;
+            padding: 9px;
+            text-indent: 12px;
+            max-width: 700px;
+            max-height: 999em;
+        }
+
+        div.lista > ul, li  {
+            background-color: rgb(145, 145, 145);
+            color: #3a3a3a;
+            list-style: none;
+            padding: 2px;
+            margin: 10px;
+            border: 2px double #c8ddc8;
+            border-radius: 0.4em 0.1em 0.3em 0.2em;
+            font-size: 20px;
+        }
+
+        aside.list {
+            background: darkgrey;
+            padding: 11px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        aside.list, p#lis {
+            padding: 19px;
+            margin: 17px;
+            border: 6px double #000;
+            border-radius: 0.3em 0.2em 0.1em 0.3em;
+        }
+
+        footer {
+            font-weight: bold;
+        }
+
+        footer > p {
+            background-color: #00000000;
+            padding: 9px;
+            margin: 9px;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer > p a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        footer > p a:hover {
+            color: #00ff00;
+            transition: 0.1ms;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
+    <header class="corpo">
         <h1>Dragão Ball</h1>
-            <ol>Os Protagonistas (Guerreiros Z) Son Goku (Kakarotto)</ol>
-                <ul>
-                    <li>Vegeta (O Príncipe dos Saiyajins)</li>
-                    <li>Gohan (Filho de Goku)</li>
-                    <li>Piccolo (O Namekuseijin)</li>
-                    <li>Trunks (Versões do Futuro e Criança)</li>
-                    <li>Goten (Filho mais novo de Goku)</li>
-                    <li>Kuririn (Melhor amigo de Goku)</li>
-                    <li>Tenshinhan e Chaos</li>
-                    <li>Yamcha e Pual</li>
-                    <li>Mestre Kame (Mestre de Goku e Kuririn)</li>
-                </ul>
-            <ol>Dragon Ball (Clássico - A Infância)</ol>
-                <ul>
-                    <li>Bulma (A ciêntista da corporação cápsula)</li>
-                    <li>Oolong (O porquinho que muda de forma)</li>
-                    <li>Chi-Chi (Esposa de Goku)</li>
-                    <li>Lançol (Launch) (A que espirra e muda de personalidade)</li>
-                    <li>Androide 8 (Oitavo)</li>
-                    <li>Vovô Gohan (Quem criou o Goku)</li>
-                    <li>Vilões: Pilaf, Shu e Mai; Exército Red Ribbon (General Blue, Tao Pai Pai); Piccolo Daimaoh.</li>
-                </ul>
-            <ol>Dragon Ball Z (A Era dos Vilões Icônicos)</ol>
-                <li>Saga Saiyajin</li>
+            <div class="lista">
+                <ol style="background: darkred; color: aqua; padding: 2px;">Os Protagonistas (Guerreiros Z) Son Goku (Kakarotto)</ol>
                     <ul>
-                        <li>Raditz (Irmão de Goku)</li>
-                        <li>Nappa (Parceiro de Vegeta)</li>
-                        <li>Sr. Kaioh (Mestre do Outro Mundo)</li>
+                        <li>Vegeta (O Príncipe dos Saiyajins)</li>
+                        <li>Gohan (Filho de Goku)</li>
+                        <li>Piccolo (O Namekuseijin)</li>
+                        <li>Trunks (Versões do Futuro e Criança)</li>
+                        <li>Goten (Filho mais novo de Goku)</li>
+                        <li>Kuririn (Melhor amigo de Goku)</li>
+                        <li>Tenshinhan e Chaos</li>
+                        <li>Yamcha e Pual</li>
+                        <li>Mestre Kame (Mestre de Goku e Kuririn)</li>
                     </ul>
-                <li>Saga de Freeza (Namekusei)</li>
+            </div>
+            
+            <div class="lista">
+                <ol style="background: darkred; color: aqua; padding: 2px;">Dragon Ball (Clássico - A Infância)</ol>
                     <ul>
-                        <li>Freeza (O Imperador do Mal)</li>
-                        <li>Capitão Ginyu e as Forças Especiais Ginyu (Rikum, Boter, Jess, Gurdo)</li>
-                        <li>Dodoria e Zarbon</li>
-                        <li>Dende e Patriarca (Namekuseijins)</li>
+                        <li>Bulma (A ciêntista da corporação cápsula)</li>
+                        <li>Oolong (O porquinho que muda de forma)</li>
+                        <li>Chi-Chi (Esposa de Goku)</li>
+                        <li>Lançol (Launch) (A que espirra e muda de personalidade)</li>
+                        <li>Androide 8 (Oitavo)</li>
+                        <li>Vovô Gohan (Quem criou o Goku)</li>
+                        <li>Vilões: Pilaf, Shu e Mai; Exército Red Ribbon (General Blue, Tao Pai Pai); Piccolo Daimaoh.</li>
                     </ul>
-                <li>Saga dos Androides e Cell</li>
+            </div>
+            
+            <div class="lista">
+                <ol style="background: darkred; color: aqua; padding: 2px;">Dragon Ball Z (A Era dos Vilões Icônicos)</ol>
+                    <li>Saga Saiyajin</li>
+                        <ul>
+                            <li>Raditz (Irmão de Goku)</li>
+                            <li>Nappa (Parceiro de Vegeta)</li>
+                            <li>Sr. Kaioh (Mestre do Outro Mundo)</li>
+                        </ul>
+                    <lo style="background: darkred; color: aqua; padding: 2px;">Saga de Freeza (Namekusei)</lo>
+                        <ul>
+                            <li>Freeza (O Imperador do Mal)</li>
+                            <li>Capitão Ginyu e as Forças Especiais Ginyu (Rikum, Boter, Jess, Gurdo)</li>
+                            <li>Dodoria e Zarbon</li>
+                            <li>Dende e Patriarca (Namekuseijins)</li>
+                        </ul>
+            </div>
+            <div class="lista">
+                <lo style="background: darkred; color: aqua; padding: 2px;">Saga dos Androides e Cell</lo>
                     <ul>
                         <li>Cell (A criação perfeita de Dr. Gero)</li>
                         <li>Androides 16, 17, 18, 19 e 20 (Dr. Gero)</li>
                         <li>Sr. Satan (O "campeão" da Terra)</li>
                         <li>Videl (Filha de Satan e esposa de Gohan)</li>
                     </ul>
-                <li>Saga de Majin Boo</li>
+                <lo style="background: darkred; color: aqua; padding: 2px;">Saga de Majin Boo</lo>
                     <ul>
                         <li>Majin Boo (Gordo, Super Boo e Kid Boo)</li>
                         <li>Babidi (O mago) e Dabura (Rei do Mundo dos Demônios)</li>
                         <li>Kaioshin (Divindades do Universo)</li>
                         <li>Fusões: Vegito e Gotenks</li>
                     </ul>
-                <li>Dragon Ball Super (A Era dos Deuses) Bills (Deus da Destruição) e Whis (Anjo)</li>
+                <lo style="background: darkred; color: aqua; padding: 2px;">Dragon Ball Super (A Era dos Deuses) Bills (Deus da Destruição) e Whis (Anjo)</lo>
                     <ul>
                         <li>Champa e Vados (Universo 6)</li>
                         <li>Hit (O lendário assassino)</li>
@@ -67,24 +158,26 @@
                         <li>Broly (Reintroduzido no cânone)</li>
                         <li>Zen-Oh (O Rei de Tudo)</li>
                     </ul>
-                <li>Dragon Ball GT (Não Canônico/Spin-off) Pan (Neta de Goku)</li>
+                <lo style="background: darkred; color: aqua; padding: 2px;">Dragon Ball GT (Não Canônico/Spin-off) Pan (Neta de Goku)</lo>
                     <ul>
                         <li>Giru (O robô)</li>
                         <li>Baby (O parasita Tsufuru)</li>
                         <li>Super 17</li>
                         <li>Dragões Malignos (Li Shenlong e outros)</li>
                     </ul>
-                <li>Outros Personagens de Apoio Yajirobe (O herói improvável)</li>
+                <lo style="background: darkred; color: aqua; padding: 2px;">Outros Personagens de Apoio Yajirobe (O herói improvável)</lo>
                     <ul>
                         <li>Mestre Karin (O gato da torre)</li>
                         <li>Sr. Popo (Assistente do Kami-Sama)</li>
                         <li>Baba (A vovó vidente)</li>
                     </ul>
-        <aside>
-            <p>
+            </div>
+
+        <aside class="list">
+            <p id="lis">
                 <i>Curiosidade:</i> Se você somar todos os figurantes de torneios e as tropas de Freeza, a lista passaria de 600 nomes!
             </p> 
-            <p>
+            <p id="lis">
                 Desses todos, qual é o seu vilão favorito? Se quiser, posso listar as transformações de cada raça 
                 (Saiyajin, Freeza, Boo) ou falar sobre os novos personagens de Dragon Ball Daima!
             </p>
@@ -92,8 +185,7 @@
     </header>
     <footer>
         <p>
-            <strong>A IA pode cometer erros. Por isso, cheque as respostas</strong> <br>
-            <a href="../index2.html" target="_self" rel="external">Voltar</a>
+            A IA pode cometer erros. Por isso, cheque as respostas<a href="../index2.html" target="_self" rel="external" style="font-size: 20px;">Voltar</a>
         </p>
     </footer>
 </body>
