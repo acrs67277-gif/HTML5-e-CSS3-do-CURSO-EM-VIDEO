@@ -16,19 +16,19 @@ header {
     font-weight: normal;
 }
 
-header p {
+header > p {
     font-size: 1.3em;
 }
 
 main {
     background-color: #f7f7f7;
-    min-width: 450px;
+    min-width: 350px;
     margin: 9px;
     padding: 2px;
     margin-bottom: 10px;
 }
 
-main h1, main h2 {
+main h1, h2 {
     background-color: #23332A;
     color: #fff;
     margin: 8px;
