@@ -15,7 +15,7 @@
 
         table {
             border-collapse: collapse;
-            width: 500px;
+            max-width: 500px;
             margin: auto;
         }
 
@@ -34,16 +34,8 @@
             background-color: #4e4edf;
         }
 
-        col.coluna-sexo {
-            background-color: yellow;
-        }
-
-        col.coluna-idade {
+        col.coluna-grupo {
             background-color: red;
-        }
-
-        col.coluna-profissao {
-            background-color: darkgreen;
         }
 
         td#feminino {
@@ -55,6 +47,17 @@
             background-color: blue;
             color: #fff;
         }
+
+        td#idade{
+            text-align: center;
+            background-color: #4e4edf;
+            color: aliceblue;
+        }
+
+        td#jor {
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -62,9 +65,7 @@
     <table>
         <colgroup>
             <col class="coluna-nome">
-            <col class="coluna-sexo">
-            <col class="coluna-idade">
-            <col class="coluna-profissao">
+            <col class="coluna-grupo" span="3">
         </colgroup>
         <caption>Cadastro</caption>
             <tr>
@@ -76,68 +77,68 @@
             <tr>
                 <td>Beatriz</td>
                 <td id="feminino">Feminino</td>
-                <td>25</td>
-                <td>Jornalista</td>
+                <td id="idade">25</td>
+                <td id="jor">Jornalista</td>
             </tr>
              <tr>
                 <td>Fernanda</td>
                 <td id="feminino">Feminino</td>
-                <td>50</td>
-                <td>Matemática</td>
+                <td id="idade">50</td>
+                <td id="jor">Matemática</td>
             </tr>
              <tr>
                 <td>Antonieta</td>
                 <td id="feminino">Feminino</td>
-                <td>89</td>
-                <td>Quimica</td>
+                <td id="idade">89</td>
+                <td id="jor">Quimica</td>
             </tr>
              <tr>
                 <td>Antônio</td>
                 <td id="masculino">Masculino</td>
-                <td>34</td>
-                <td>Professor</td>
+                <td id="idade">34</td>
+                <td id="jor">Professor</td>
             </tr>
              <tr>
                 <td>Hélio</td>
                 <td id="masculino">Masculino</td>
-                <td>29</td>
-                <td>Jornalista</td>
+                <td id="idade">29</td>
+                <td id="jor">Jornalista</td>
             </tr>
              <tr>
                 <td>Augusto</td>
                 <td id="masculino">Masculino</td>
-                <td>66</td>
-                <td>Arquiteto</td>
+                <td id="idade">66</td>
+                <td id="jor">Arquiteto</td>
             </tr>
              <tr>
                 <td>Jiraiya</td>
                 <td id="masculino">Masculino</td>
-                <td>50</td>
-                <td>Hestóriador</td>
+                <td id="idade">50</td>
+                <td id="jor">Hestóriador</td>
             </tr>
              <tr>
                 <td>Naruto</td>
                 <td id="masculino">Masculino</td>
-                <td>50</td>
-                <td>Orador</td>
+                <td id="idade">50</td>
+                <td id="jor">Orador</td>
             </tr>
              <tr>
                 <td>Julia</td>
                 <td id="feminino">Feminino</td>
-                <td>25</td>
-                <td>Jornalista</td>
+                <td id="idade">25</td>
+                <td id="jor">Jornalista</td>
             </tr>
              <tr>
                 <td>Catarina</td>
                 <td id="feminino">Feminino</td>
-                <td>25</td>
-                <td>Jornalista</td>
+                <td id="idade">25</td>
+                <td id="jor">Jornalista</td>
             </tr>
              <tr>
                 <td>Valeria</td>
                 <td id="feminino">Feminino</td>
-                <td>25</td>
-                <td>Bibiotecária</td>
+                <td id="idade">25</td>
+                <td id="jor">Bibiotecária</td>
             </tr>
     </table>
 </body>
