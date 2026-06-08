@@ -3,9 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A história do Shell Script</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: #ccc;
+        }
+
+        header {
+            background-color: aliceblue;
+            color: #5f5f5f;
+            padding: 8px;
+            margin: 8px;
+            border: 1px solid black;
+            border-radius: 0.5em;
+        }
+
+        main > div#script {
+            background-color: antiquewhite;
+            color: #5f5f5f;
+            padding: 9px;
+            margin: 9px;
+            border-radius: 0.5em;
+        }
+
+        main > div#script > ul, li {
+            color: #003cff;
+            padding: 4px;
+            list-style: none;
+        }
+
+        strong {
+            color: darkred;
+        }
+
+        i {
+            color: #5f5f01;
+        }
+
+        ol > i {
+            color: #ff00ff;
+            padding: 7px;
+            margin: 7px;
+            font-weight: bold;
+        }
+
+        p#shell {
+            color: #003cff;
+        }
+
+        footer > p#shell, a {
+            background-color: aliceblue;
+            padding: 7px;
+            margin: 7px;
+            text-align: center;
+            border-radius: 0.2em;
+        }
+
+        footer, a:hover {
+            color: #ff00d4;
+            text-decoration: none;
+            transition: 0.005ms;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Shell Script</h1>
+        <p id="shell">A história do Shell Script é a história da interface entre o homem e a máquina nos sistemas operacionais.</p>
+        <p id="shell">
+            Ele nasceu da necessidade de automatizar tarefas repetitivas dentro do Unix, transformando o terminal de
+            um simples lugar para digitar  comandos em um ambiente de programação completo.
+        </p>
+    </header>
+    <main>
+        <ol><i>Aqui está a linha do tempo dessa evolução:</i></ol>
+        <div id="script">
+            <ul>
+                <li>
+                    <strong>1. O Antecessor:</strong> Thompson Shell(1971) Nos primórdios do Unix (desenvolvido nos laboratórios Bell), 
+                    Ken Thompson criou o primeiro shell, conhecido  simplesmente como sh.Limitação: <br>
+                </li>
+                <li>
+                    <i>Era muito básico.</i> Ele não tinha variáveis, nem estruturas de controle (como if ou for). 
+                    Servia apenas para executar comandos um após o outro.
+                </li>
+                <li>
+                    <i>O Conceito de Pipe:</i> Foi aqui que nasceu o conceito de Pipes (|),permitindo que a saída de 
+                    um programa fosse a entrada de outro, a base da filosofia Unix.
+                </li>
+                <li>
+                    <strong>2. A Revolução:</strong>Bourne Shell (1977)O  Shell Script como conhecemos hoje começou com Stephen Bourne. 
+                    Ele reescreveu o sh para o Unix Version 7.
+                </li>
+                <li>
+                    <i>A Linguagem:</i> O BourneShell introduziu variáveis, fluxos de decisão e loops. 
+                    Pela primeira vez, o shell não era apenas um executor de comandos, mas  uma linguagem 
+                    de programação interpretada.
+                    <i>Legado:</i> Até hoje, quase todos os scripts começam com a famosa linha #!/bin/sh, 
+                    uma referência direta ao trabalho de Bourne.
+                </li>
+                <li>
+                    <strong>3. O C-Shell e o KornShell</strong> (Anos 80)Conforme o Unix se espalhava, 
+                    novas necessidadessurgiam, levando a uma "guerra de shells": 
+                </li>
+                <li>
+                    <i>C-Shell (csh):</i> Criado por Bill Joy (fundador da Sun Microsystems).
+                </li>
+                    
+                    
+                <li>
+                    Ele usava uma sintaxe parecida com a linguagem C, que era popular entre programadores, 
+                    mas era criticado por ter bugs em scripts  complexos.
+                </li>
+                <li>
+                    <i>KornShell (ksh):</i> Criado por David Korn. Ele tentou unir o melhor dos dois mundos: 
+                    a compatibilidade do Bourne Shellcom os recursos interativos 
+                    (como histórico de comandos) do C-Shell. Tornou-se o padrão em sistemas corporativos.
+                </li>
+                <li>
+                    <strong>4. O  Gigante: BASH</strong> (1989)Com a criação do projeto GNU por Richard Stallman, 
+                    era necessário um shell de código aberto que não dependesse das licenças do Unix original.
+                </li>
+                <li>
+                    <i>O Nome:</i> Brian Fox criou o BASH (Bourne-Again Shell), um trocadilho com "nascido de  novo" e "Shell de Bourne".
+                </li>
+                <li>
+                    <i>Domínio: O Bash</i> incorporou quase todos os recursos do ksh e csh. Quando o Linux foi lançado e oadotou como shell padrão, 
+                    o Bash tornou-se a "língua materna" dos administradores de sistemas em todo o mundo.
+                </li>
+                <li>
+                    <strong>5. Zsh e o Futuro Moderno</strong>. (Anos 90 - Hoje)Embora o Bash continue sendo o padrão 
+                    na maioria dos servidores, novos shells surgiram focados na experiência do usuário.
+                </li>
+                <li>
+                    <i>Zsh (Z Shell):</i> Lançado em 1990 por Paul Falstad. Ele é uma versão "turbinada" do Bash, 
+                    com melhor autocompletar e correções de erros. Em 2019, a Apple substituiu o Bash pelo Zsh como padrão no macOS.
+                </li>
+                <li>
+                    <i>Fish (Friendly Interactive Shell):</i> Focado totalmente na facilidade de uso e sugestões inteligentes de comandos.
+                    Por que o Shell Script  continua essencial? Mesmo com linguagens modernas como Python, o <i>Shell Script</i> 
+                    sobrevive por três pilares:
+                </li>
+                <li>
+                    <i>Onipresença:</i> Todosistema Linux/Unix/macOS já vem com o shell instalado. Você não precisa instalar nada para rodar um script.
+                </li>
+                <li>
+                    <i>Colagem de  Sistemas:</i> Ele é a "cola" perfeita para unir programas diferentes. 
+                    Se você tem um programa em C, um em Python e um comando do sistema, 
+                    o Shell Script os faz trabalhar juntos em harmonia.
+                </li>
+                <li>
+                    <i>Administração e DevOps:</i> Para automação de servidores, deploys emnuvem (AWS, Azure) 
+                    e pipelines de CI/CD, o shell ainda é a ferramenta mais rápida e direta.
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p id="shell">Texto gerado por IA. <a href="../index2.html" target="_self" rel="next">VOLTAR</a></p>
+    </footer>
 </body>
 </html>
