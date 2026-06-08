@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: 'Times New Roman', Times, serif;
+            color: antiquewhite;
+        }
+
+        main, a {
+            background-color: rgb(131, 131, 131);
+            color: darkmagenta;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            color: darkorchid;
+        }
+
+        a {
+            color: rgb(139, 4, 133);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando JavaScript</h1>
+    <main>
+        <a href="#" onclick="clicou()">Clique em mim</a>
+        <div id="saida">
+           
+        </div>
+    </main>
+    
+
+    <script>
+        function clicou() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>Aló, Novo Mundo!</p>'
+        }
+    </script>
+  
+</body>
+</html>
