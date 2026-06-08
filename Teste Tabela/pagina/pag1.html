@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 0.3em;
+            text-align: justify;
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+        }
+
+        div.corpo > h1 {
+            background-color: aliceblue;
+            color: crimson;
+            margin: 12px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        div#corpo > ol, li {
+            background-color: #fff;
+            color: #000;
+            max-width: 500px;
+            list-style: none;
+            text-align: center;
+        }
+
+        li#c-1 {
+            color: maroon;
+        }
+
+        footer {
+            padding: 9px;
+            margin: 9px;
+        }
+
+        footer > p#c-2, a {
+            text-align: center;
+            color: aqua;
+            border: none;
+        }
+
+        footer > p#c-2, a:hover {
+            color: red;
+            text-decoration: none;
+            transition: 0.01ms;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="corpo">
+        <h1>Texto - I</h1>
+        <div id="corpo">
+            <ol>
+                <li id="c-1">A dor nos faz mais fortes.</li>
+                <li id="c-1">A alegria e a tristeza devem andar sem juntas.</li>
+                <li id="c-1">Liberdade é um que nunca deve ser deixado de lado.</li>
+                <li id="c-1">A vida e a morte estão semple juntas.</li>
+                <li id="c-1">Tudo começa com alegremas no inicío mas termina com um sorriso no fim de uma jornada.</li>
+                <li id="c-1">Fique tranquilo tudo ficara bem.</li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <p id="c-2">TEXTO GERADO POR IA. <a href="../index.html" target="_self" rel="next">Voltar</a></p>
+    </footer>
 </body>
 </html>
