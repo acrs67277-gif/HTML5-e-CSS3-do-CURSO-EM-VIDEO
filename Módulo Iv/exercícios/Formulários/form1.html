@@ -11,23 +11,104 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        form {
-            border: 1px solid #000;
-            padding: 11px;
-            margin: 11px;
+        body {
+            background-color: #00000065;
         }
+
+        h1 {
+            text-align: center;
+            color: red;
+            font-size: 18px;
+            margin: 9px;
+        }
+
+        form {
+            border: 2px solid #fff;
+            border-radius: 0 0.5em 0.5em 0 ;
+            padding: 11px;
+            margin: 11px auto;
+            width: 600px;
+        }
+
+        form, div {
+            background-color: pink;
+            padding: 12px;
+            margin: auto;
+        }
+
+        #n-1 {
+            width: 200px;
+            height: 30px;
+            margin: 9px;
+        }
+
+        #s-1 {
+            width: 200px;
+            height: 30px;
+        }
+
+        #e-1 {
+            width: 200px;
+            height: 30px;
+        }
+
+        #se-1 {
+            width: 200px;
+            height: 30px;
+        }
+
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php">
-        <p>
+    <form action="cadastro.php" method="get">
+        <div>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="n-1">
             <label for="isobrenome">Sobrenome:</label> 
             <input type="text" name="sobrenome" id="s-1">
+            <label for="imail">Email:</label>
+            <input type="email" name="email" id="e-1">
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="se-1">
             <input type="submit" value="Enviar">
-        </p>
+        </div>
+
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="n-1">
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="s-1">
+            <label for="imail">Email:</label>
+            <input type="email" name="email" id="e-1">
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="se-1">
+            <input type="submit" value="Enviar">
+        </div>
+
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="n-1">
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="s-1">
+            <label for="imail">Email:</label>
+            <input type="email" name="email" id="e-1">
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="se-1">
+            <input type="submit" value="Enviar">
+        </div>
+        
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="n-1">
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="s-1">
+            <label for="imail">Email:</label>
+            <input type="email" name="email" id="e-1">
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="se-1">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
 </body>
 </html>

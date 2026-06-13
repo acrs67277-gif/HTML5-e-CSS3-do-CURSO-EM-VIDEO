@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+            font-size: 20px;
+        }
+
+        form {
+            border: 3px solid #038519;
+            border-radius: 0 133px 6px 0;
+        }
+
+        #usuario {
+            background-color: #ccc;
+            margin-right: 89px;
+            border-radius: 0 100px 0;
+        }
+
+        #senha {
+            background-color: #ccc;
+            margin-right: 89px;
+            border-radius: 100px 0px 100px;
+        }
+
+        p#botões > #en, #li {
+            color: #fff;
+            background-color: darkmagenta;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+     <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p id="usuario">
+            <label for="iusu">Usuário:</label>
+            <input type="text" nome="usu" id="u-1" required minlength="5" maxlength="30" size="20" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+        <p id="senha">
+            <label for="isen">Senha:</label>
+            <input type="password" name="senha" id="s-1" required minlength="10" maxlength="20" placeholder="Digite sua senha" autocomplete="current-password">
+        </p>
+        <p id="botões">
+            <input type="submit" value="Enviar" id="en">
+            <input type="reset" value="Limpar" id="li">
+        </p>
+    </form>
+</body>
+</html>

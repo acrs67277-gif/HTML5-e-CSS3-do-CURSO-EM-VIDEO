@@ -6,6 +6,7 @@
     <title>Cadastro</title>
 </head>
 <body>
-
+    Os dados foram cadastrados com sucesso!
+    Aprenda PhP para saber o que fazer com eles!
 </body>
 </html>
