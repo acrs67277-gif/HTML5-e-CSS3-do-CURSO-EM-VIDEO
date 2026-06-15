@@ -3,7 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <title>Navegação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            color: #000;
+            font-size: 20px;
+            border: 1px solid #ffd102;
+            border-radius: 100px 100px 100000px 10000px;
+            box-shadow: 2px 3px 3px 2px #00000063;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #008000;
+            max-width: 500px;
+            min-height: 500px;
+            margin: 10px auto;
+            padding: 12px;
+        }
+
+        nav {
+            margin: 11px;
+            padding: 11px;
+        }
+
+        nav > ol, li, a {
+            color: blue;
+        }
+
+        nav > ol > li, a#C-III:hover {
+            color: #ccc;
+            transition: 0.5ms;
+            text-decoration: none;
+        }
+
+        nav > ol > li {
+            color: black;
+        }
+            
+    </style>
 </head>
 <body>
     <section>
@@ -12,9 +66,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <nav>
-            <ul>
-                <li><a href="">Voltar para a página cinza</a></li>
-            </ul>
+            <ol>
+                <li><a href="desafio - 8.html" target="_self" rel="next"  id="C-III">Voltar para a página cinza</a></li>
+            </ol>
         </nav>
     </section>
 </body>
