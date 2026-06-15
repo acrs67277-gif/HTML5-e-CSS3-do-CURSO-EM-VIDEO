@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Navegação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            color: #cc00ff;
+            font-size: 15px;
+            border: 1px solid blue;
+            border-radius: 100px 100px 100000px 10000px;
+            box-shadow: 2px 3px 3px 2px #00000063;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ccc;
+            width: 500px;
+            height: 500px;
+            margin: 10px auto;
+            padding: 15px;
+        }
+
+        nav {
+            margin: 11px;
+            padding: 11px;
+        }
+
+        nav > ul, li, a {
+            color: blue;
+            
+        }
+
+        nav > ol > li, a#V-I:hover {
+            color: #00a100;
+            transition: 0.5ms;
+            text-decoration: none;
+        }
+
+        nav > ol > li, a#A-II:hover {
+            color: #8f8f00;
+            transition: 0.5ms;
+            text-decoration: none;
+        }
+
+        nav > ol > li {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Desafio da Navegação</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore eveniet sed laborum iusto at laboriosam, natus perspiciatis labore itaque nobis et sit, ipsam atque. Ducimus eveniet soluta modi corrupti?
+        </p>
+        <nav>
+            <ol>
+                <li><a id="V-I" href="verde.html" target="_blank" rel="next">Acessar a área verde</a></li>
+                <li><a id="A-II" href="amarela.html" target="_blank" rel="next">Acessar a área amarela</a></li>
+            </ol>
+        </nav>
+    </section>
+</body>
+</html>
