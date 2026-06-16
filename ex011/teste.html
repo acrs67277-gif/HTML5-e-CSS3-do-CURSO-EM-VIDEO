@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias e HTML5</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+            border: 2px solid darkred;
+            box-shadow: 2px 3px 3px 2px #0051ffa8;
+            border-radius: 60px 700px 70px 600px;
+        }
+
+        picture > img {
+            display: block;
+            margin: 0 auto;
+            padding: 9px;
+            border: 5px solid pink;
+            border-radius: 40px 4330px 40px 2000px;
+            background-color: yellow;
+        }
+
+        header {
+            background: #fff;
+            color: darkmagenta;
+            padding: 10px;
+            margin: 10px;
+            font-weight: bold;
+            border-radius: 0.5em;
+        }
+
+        h2 {
+            text-align: center;
+            border: 2px solid darkred;
+            box-shadow: 2px 3px 3px 2px #0051ffa8;
+            border-radius: 60px 700px 70px 600px;
+        }
+
+        main {
+            background: #fff;
+            color: darkmagenta;
+            padding: 9px;
+            margin: 9px;
+            font-weight: bold;
+            border-radius: 0.5em;
+        }
+
+        main > audio {
+            display: block;
+            margin: 10px auto;
+            padding: 9px;
+            border: 5px solid #ff7d93;
+            border-radius: 4330px 500px 20000px 4330px;
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Dinânmicas</h1>
+    <header>
+        <p>
+            Tente abrir este site em varios dispositivos deferentesou 
+            simplesmente aumente e diminua o tamanho do seunavegador.
+        </p>
+    </header>
+   
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    
+    <main>
+        <h2>Colocando áudio no seu site</h2>
+        <p>Vamos aprender a reproduzir áudios e HTML5</p>
+        <audio src="midia/Twenty One Pilots.mp3" controls loop></audio>
+        <audio src="midia/Stromae, Pomme, Coldplay .mp3" controls loop></audio>
+    </main>
+</body>
+</html> 
