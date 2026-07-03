@@ -3,19 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Literatura</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: #fff;
+        }
+
+        header {
+            background: white;
+            color: rgb(155, 88, 0);
+            margin: 7px;
+            padding: 7px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        p#literatura {
+            text-indent: 20px;
+            margin: 7px;
+            padding: 7px;
+            text-align: justify;
+        }
+
+        main {
+            background-color: #ccc;
+            color: #000;
+            margin: 7px;
+            padding: 7px;
+        }
+
+        h2 {
+            color: darkmagenta;
+        }
+
+        p#literatura-2 {
+            color: darkgreen;
+            font-weight: bold;
+        }
+
+        p#literatura-3 {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        div {
+            background-color: #000;
+            color: #fff;
+            margin: 7px;
+            padding: 7px;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px 3px #ff002b6c;
+        }
+
+        div > dl > dt > dd, i {
+            background-color: rgb(255, 230, 2);
+        }
+
+        div > dl > dt > dd, i:hover {
+            color: #f700ff;
+            font-size: medium;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        footer > p#literatura-4 {
+            text-align: center;
+            background-color: #505050;
+            margin: 7px;
+            padding: 7px;
+        }
+
+        footer > p#literatura-4 a {
+            text-decoration: none;
+            color: yellowgreen;
+        }
+
+        footer > p#literatura-4 a:hover {
+            color: rgb(255, 0, 255);
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
 </head>
 <body>
     <header>
     <h1>História da literatura</h1>
-        <p>
+        <p id="literatura">
             Resumir a história da literatura é narrar a trajetória da própria consciência humana. Éa passagem do mito contado ao redor da fogueira para a ficção complexa lida em telasdigitais.
         </p>
     </header>
-        <p>Aqui está a linha do tempo dessa grande odisseia:</p>
+    <main>
+        <p id="literatura-2">Aqui está a linha do tempo dessa grande odisseia:</p>
     <h2>1. As Origens: A Oralidade e a Argila (Antiguidade)</h2>
         <div>
-            <p>
+            <p id="literatura-3">
                 Antes de ser escrita, a literatura era memória. Poemas eram 
                 rimados e ritmados para facilitar a memorização e a transmissão oral.
             </p>
@@ -33,7 +118,7 @@
         </div>
     <h2>2. A Idade Média: O Sagrado e o Cavalheiresco (Séculos V – XV)</h2>
         <div>
-            <p>
+            <p id="literatura-3">
                 Com a queda de Roma, a literatura europeia foi dominada 
                 pela Igreja, mas o espírito popular resistiu.
             </p>
@@ -54,7 +139,7 @@
         </div>
     <h2>3. Renascimento e Humanismo (Séculos XV – XVI)</h2>
         <div>
-            <p>
+            <p id="literatura-3">
                 O homem volta ao centro do universo (Antropocentrismo). 
                 A invenção da prensa de Gutenberg (1450) revoluciona o acesso ao livro.
             </p>
@@ -74,7 +159,7 @@
         </div>
     <h2>4. Barroco e Arcadismo (Séculos XVII – XVIII)</h2>
         <div>
-            <p>A literatura reflete o conflito entre fé e razão.</p>
+            <p id="literatura-3">A literatura reflete o conflito entre fé e razão.</p>
             <dl>
                 <dt>
                     <dd>
@@ -87,31 +172,70 @@
             </dl>
         </div>
     <h2>5. O Século XIX: A Explosão de Emoções e Realidade</h2>
-   
-    Este é o século de ouro da literatura, onde surgem os três grandes movimentos modernos:
-
-    Romantismo: Foco no "eu", na liberdade criativa, no nacionalismo e no sentimentalismo (Goethe, Victor Hugo).
-
-    Realismo e Naturalismo: Oposição ao romantismo. Autores como Flaubert e Machado de Assis buscam retratar a sociedade e a psique humana "como elas são", sem idealizações.
-
-    Parnasianismo e Simbolismo: Foco na "arte pela arte" e na sugestão sensorial e mística.
-
-    6. O Século XX: A Ruptura Modernista
-    As Guerras Mundiais fragmentaram a percepção da realidade. A literatura torna-se experimental.
-
-    Modernismo: Ruptura com o passado. James Joyce (Ulisses) e Virginia Woolf exploram o fluxo de consciência. No Brasil, a Semana de Arte Moderna (1922) redefine a identidade nacional.
-
-    Existencialismo: Autores como Camus e Sartre questionam o sentido da existência no pós-guerra.
-
-    Realismo Mágico: Na América Latina, Gabriel García Márquez (Cem Anos de Solidão) mistura o fantástico com o cotidiano.
-
-    7. Contemporaneidade: A Multiplicidade (Século XXI)
-    Hoje, a literatura é marcada pela hibridização e pela diversidade de vozes.
-
-    Pós-modernismo: Fim das grandes narrativas, uso de ironia, intertextualidade e metaficção.
-
-    Novas Plataformas: A literatura digital, os audiobooks e o fenômeno da escrita em redes sociais e plataformas como o Wattpad.
-
-    Diversidade: Fortalecimento de literaturas decoloniais, periféricas e de minorias representativas.
+        <div>
+            <p id="literatura-3">
+                Este é o século de ouro da literatura, onde surgem os três grandes movimentos modernos:
+            </p>
+            <dl>
+                <dt>
+                    <dd>
+                        <i>Romantismo:</i> Foco no "eu", na liberdade criativa, no nacionalismo e no sentimentalismo (Goethe, Victor Hugo).
+                    </dd>
+                    <dd>
+                        <i>Realismo e Naturalismo:</i> Oposição ao romantismo. Autores como Flaubert e Machado de Assis buscam retratar a sociedade e a psique humana "como elas são", sem idealizações.
+                    </dd>
+                    <dd>
+                        <i>Parnasianismo e Simbolismo:</i> Foco na "arte pela arte" e na sugestão sensorial e mística.
+                    </dd>
+                </dt>
+            </dl>
+        </div>
+    <h2>6. O Século XX: A Ruptura Modernista</h2>
+        <div>
+            <p id="literatura-3">
+                As Guerras Mundiais fragmentaram a percepção da realidade. 
+                A literatura torna-se experimental.
+            </p>
+            <dl>
+                <dt>
+                    <dd>
+                        <i>Modernismo:</i> Ruptura com o passado. James Joyce (Ulisses) e Virginia Woolf exploram o fluxo de consciência. No Brasil, a Semana de Arte Moderna (1922) redefine a identidade nacional.
+                    </dd>
+                    <dd>
+                        <i>Existencialismo:</i> Autores como Camus e Sartre questionam o sentido da existência no pós-guerra.
+                    </dd>
+                    <dd>
+                        <i>Realismo Mágico:</i> Na América Latina, Gabriel García Márquez (Cem Anos de Solidão) mistura o fantástico com o cotidiano.
+                    </dd>
+                </dt>
+            </dl>
+        </div>
+    <h2>7. Contemporaneidade: A Multiplicidade (Século XXI)</h2>
+    <div>
+        <p id="literatura-3">
+            Hoje, a literatura é marcada pela hibridização e pela diversidade de vozes.
+        </p>
+        <dl>
+            <dt>
+                <dd>
+                    <i>Pós-modernismo:</i> Fim das grandes narrativas, 
+                    uso de ironia, intertextualidade e metaficção.
+                </dd>
+                <dd>
+                    <i>Novas Plataformas:</i> A literatura digital, os audiobooks 
+                    e o fenômeno da escrita em redes sociais e plataformas como o Wattpad.
+                </dd>
+                <dd>
+                    <i>Diversidade:</i> Fortalecimento de literaturas decoloniais, periféricas e de minorias representativas.
+                </dd>
+            </dt>
+        </dl>
+    </div>
+    </main>
+<footer>
+    <p id="literatura-4">
+        Texto gerado por IA. <a href="../index.html" target="_self" rel="next">VOLTAR</a>
+    </p>
+</footer>
 </body>
 </html>
