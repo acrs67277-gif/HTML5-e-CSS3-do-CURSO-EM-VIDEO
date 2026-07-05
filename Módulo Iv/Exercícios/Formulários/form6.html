@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fomulário</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: #0a0185;
+            color: #ff0000;
+        }
+
+        .form-esportes {
+            background-color: yellow;
+            font-size: large;
+            margin: 6px;
+            padding: 6px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer p {
+            background: white;
+            margin: 6px;
+            padding: 6px;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplo de Fomulário</h1>
-    <form action="php/cadastro.php" method="get" autocomplete="on">
+    <section class="form-esportes">
+        <form action="php/cadastro.php" method="get" autocomplete="on">
         <fieldset>
             <legend>Sexo</legend>
             <input type="radio" name="sexo" id="masc" value="M"><label for="imasc">Masculino</label> <br>
@@ -28,6 +58,8 @@
         </p>
 
     </form>
+    </section>
+    
     <footer>
         <p>&copy; 2026 Exemplo de Formulário. Todos os direitos reservados.</p>
     </footer>
