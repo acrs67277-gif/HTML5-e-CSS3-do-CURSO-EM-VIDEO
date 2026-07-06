@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > input, label {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo - I</h1>
+    <section>
+        <form action="php/cadastro.php" method="get">
+            <fieldset>
+                <legend>Formulário de Cadastro</legend>
+                <div>
+                    <label for="nome">NOME</label>
+                    <input type="text" nome="nome" id="inome">
+                    <label for="sexo">SEXO</label>
+                    <input type="text" nome="sexo" id="isexo">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Serviços</legend>
+                <div>
+                    <label for="serv">Cargos disponiveis</label>
+                    <input type="text" nome="emprego" id="iemprego">
+                    <label for="idisponivel">Gerente</label>
+                    <input type="text" nome="gerente" id="igerente">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Botão</legend>
+                <div>
+                    <input type="submit" name="botao" id="ibotao" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
