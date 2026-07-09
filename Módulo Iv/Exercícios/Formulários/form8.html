@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formuláro</title>
+    <style>
+       
+    </style>
 </head>
 <body>
+    <h1>Exemplo de Formulário</h1>
     <fieldset>
         <legend>Dados</legend>
-        <form action="php/cadastro.php" method="post" autocomplete="on">
+        <form action="php/cadastro.php" method="get" autocomplete="on">
             <p>
                 <label for="iest">Estado:</label>
                 <select name="estado" id="iest">
@@ -33,6 +37,23 @@
                     
                 </select>
             </p>
+
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Admistrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+
             <p>
                 <input type="submit" volue="Enviar">
                 <input type="reset" value="Limpar">
