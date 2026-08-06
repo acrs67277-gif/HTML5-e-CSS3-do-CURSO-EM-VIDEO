@@ -37,6 +37,21 @@ h1 {
     font-size: 2em;
 }
 
+section > div, p {
+    background-color: rgba(240, 248, 255, 0.315);
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-indent: -20px;
+    color: #001677;
+    border-radius: 10px 35px 47px 88px;
+}
+
+p {
+    background-color: rgba(240, 248, 255, 0);
+}
+
 img {
     display: block;
     margin: auto;
