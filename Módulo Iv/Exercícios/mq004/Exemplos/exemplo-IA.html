@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Breakpoints Responsivos</title>
+    <style>
+        /* ==========================================
+           1. ESTILOS BASE (Mobile-First / XS)
+           ================================---------- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.5;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #2563eb;
+        }
+
+        /* No celular, os cards ficam empilhados em uma coluna */
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        /* ==========================================
+           2. BREAKPOINT: SMALL / MD (≥ 768px)
+           Tablets e telas médias
+           ================================---------- */
+        @media (min-width: 768px) {
+            body {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            /* Muda para uma grelha de 2 colunas */
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* ==========================================
+           3. BREAKPOINT: LARGE (≥ 1024px)
+           Laptops e desktops
+           ================================---------- */
+        @media (min-width: 1024px) {
+            header {
+                padding: 24px;
+            }
+
+            /* Muda para uma grelha de 3 colunas em telas maiores */
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Design Responsivo com Breakpoints</h1>
+            <p>Redimensione a janela do navegador para ver a grelha a adaptar-se.</p>
+        </header>
+
+        <main class="grid">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Em telemóveis/celulares, ocupo 100% da largura. Em tablets, divido o espaço. Em desktops, fico em uma linha de três colunas.</p>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>O CSS foi construído com a abordagem *mobile-first*, garantindo uma base leve para dispositivos móveis.</p>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Os pontos de interrupção (`min-width: 768px` e `1024px`) controlam o comportamento do layout conforme o espaço aumenta.</p>
+            </div>
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor necessitatibus maxime quo nisi, accusamus sint ut provident reprehenderit! Alias quidem distinctio blanditiis deserunt dolorum ratione earum recusandae non necessitatibus doloribus.</p>
+            </div>
+            <div class="card">
+                <h3>Card 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maiores vel! Ducimus magnam minus suscipit nemo debitis, quisquam nihil obcaecati quam quia ipsum! Ducimus, placeat distinctio nihil eaque sapiente explicabo.</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere ullam repellat non corporis labore facilis inventore modi qui cumque commodi, deleniti, reiciendis voluptates corrupti mollitia quidem omnis saepe perferendis!</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
