@@ -14,7 +14,43 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    background-color: #9340ca;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(2, 23, 138);
+
+    transition: width .3ms, height .3ms;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../img/istockphoto-1413790486-1024x1024.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section#login div#formulario {
+    display: block;
+    padding: 10px;
 }
