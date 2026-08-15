@@ -38,7 +38,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgb(2, 23, 138);
 
-    transition: width .3ms, height .3ms;
+    transition: width cubic-bezier(0.075, 0.82, 0.165, 1), height cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-timing-function: ease;
 }
 
