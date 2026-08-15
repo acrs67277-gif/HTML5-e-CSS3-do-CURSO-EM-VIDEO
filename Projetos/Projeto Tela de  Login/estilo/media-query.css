@@ -1,5 +1,27 @@
 @charset "utf-8";
 
+/*
+    Typical Device Breakpoints
+    Pequenas telas: até 600px
+    Celular: de 600px até 768px
+    Desktop: 992px até 1200px
+    Grandes telas; acima de 1200px
+*/
+
+@media screen and (min-width: 726px) and (max-width: 768px) {
+    section#login {
+        width: 80vw;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 100%;
+    }
+    section#login > div#formulario {
+        float: right;
+        width: 80%;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     section#login {
         width: 80vw;
