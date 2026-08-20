@@ -21,23 +21,24 @@
                     para acessar sua conta o poder fazer as 
                     configurações no seu ambiente.
                 </p>
-                <form action="php/login.php" method="post" autocomplete="on">
+                <form action="php/login.php" method="get"autocomplete="on">
                     <div class="campo">
                         <p>
-                            <span class="material-symbols-outlined">person</span>
+                            <span class="material-symbols-outlined">person<span>
                         </p>
-                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email">
-                        <label for="ilogin">Login</label>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin"></label>
                     </div>
                     <div class="campo">
                         <p>
                             <span class="material-symbols-outlined">vpn_key<span>
                         </p>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password">
-                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+
+                        <label for="isenha"></label> <br><br>
                         <input type="submit" value="Entrar">
-                        <a href="esqueci.html">
-                            Esqueci a senha <span class="material-symbols-outlined">Mail</span>
+
+                        <a href="esqueci.html" class="botao"><span class="material-symbols-outlined">Mail</span>
                         </a>
                     </div>
                 </form>
