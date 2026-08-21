@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Flexbox CSS</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Flexbox CSS3</h1>
+        <p>CSS Flexible Box Module Level 1</p>
+            <div>
+                <section>
+                    <aside>
+                        O CSS Flexible Box Module Level 1 (mais conhecido como Flexbox) é um modelo de layout da W3C projetado para proporcionar uma maneira mais eficiente de organizar, alinhar e distribuir espaços entre itens em um contêiner, mesmo quando o tamanho deles é desconhecido ou dinâmico.
+                    </aside>
+                    <aside>
+                        Antes do Flexbox, os desenvolvedores dependiam de truques com float, display: inline-block ou tabelas, o que tornava tarefas simples (como centralizar um elemento verticalmente) complexas e frustrantes.
+                    </aside>
+                </section>
+            </div>
+        <h1>Principais Conceitos e Funcionamento</h1>
+                <p>
+                    <strong>O Flexbox</strong> funciona com base na ideia de um Contêiner Flexível (display:fleou display: inline-flex) que controla o comportamento dos seus Itens Flexíveisdiretos. layout opera ao longo de dois eixos principais:
+                </p>
+                <p>
+                    <strong>Eixo Principal (Main Axis):</strong> É a direção principal na qual os itensãodispostos (linha por padrão, horizontal da esquerda para a direita). Pode ser alteradocoa propriedade flex-direction.
+                </p>
+                <p>
+                    <strong>Eixo Cruzado (Cross Axis):</strong> É o eixo perpendicular ao Eixo Principal(verticapor padrão, de cima para baixo).
+                </p>
+        <h2>Vantagens e Recursos Principais</h2>
+            <div>
+                <ol>
+                    <li>
+                        <i>Alinhamento Direcionável:</i> É extremamente simples alinhar itens no centronaspontas ou distribuídos uniformemente usando propriedades como <code>justify-content ecode><code>align-items</code>.
+                    </li>
+                    <li>
+                        <i>Responsividade Natural:</i> Os itens podem crescer <code>(flex-grow)</code> oudiminui<code>(flex-shrink)</code> automaticamente para preencher o espaçodisponível ou evitatransbordamento na tela.
+                    </li>
+                    <li>
+                        <i>Ordem Flexível:</i> A propriedade order permite alterar a ordem visual doselementos nnavegador sem precisar modificar a estrutura do código HTML.
+                    </li>
+                    <li>
+                        <i>Quebra de Linha (Wrap):</i> Com flex-wrap: wrap, os itens podem quebrar para alinhseguinte de forma organizada quando o espaço do contêiner acabar.
+                    </li>
+                </ol>
+            </div>
+        <h2>Exemplo Prático de Código</h2>
+            <div>
+                <pre>
+                    <code>
+                        .container {
+                            display: flex;
+                            justify-content: space-between; /* Distribui o espaço horizontalmente */
+                            align-items: center;            /* Centraliza verticalmente */
+                        }
+                    </code>
+                </pre>
+            </div>
+                <p>
+                    <strong>Nota:</strong> Para layouts bidimensionais complexos (linhas e colunas simultâneas), opadrão moderno recomendado em conjunto com o Flexbox é o CSS Grid Layout.
+                </p>
+        <h2>CSS Grid Layout Module Level 1/2</h2>
+                <div>
+                    <p>
+                        O CSS Grid Layout Module é o sistema de layout mais poderoso disponível no CSS moderno.Diferentedo Flexbox — que lida primariamente com uma dimensão por vez (linha ou coluna) —, oGrid foi criadopara trabalhar em duas dimensões simultaneamente: linhas e colunas (eixos X eY). <br>
+                    </p>
+                    <p>
+                        Com ele, vocêconsegue desenhar a estrutura inteira de uma página web (como cabeçalho, menulateral, área deconteúdo principal e rodapé) como se estivesse montando um tabuleiro ou umaplanilha.  
+                    </p>
+                </div>
+        <h2>Diferença entre o Level 1 e o Level 2</h2> <a href="#">W3c</a>
+            <div>
+                <ul>
+                    <li>
+                        <strong>Level 1 (Nível 1):</strong>Introduziu o sistema completo de grades bidimensionais na Web. Permite definir linhas e colunas, posicionar itens com precisão cirúrgica usando números de linhas ou nomes, criar espaços automáticos <strong>(gap)</strong> e usar unidades flexíveis inovadoras, como a unidade fr (fração de espaço).
+                    </li>
+                    <li><strong>Level 2 (Nível 2):</strong> Trouxe uma adição muito aguardada e poderosa chamada Subgrid.</li>
+                        <ul>
+                            <li>
+                                <i>O problema antes do Nível 2:</i> Se você criava uma grade principal e colocava um card dentro dela, os elementos internos daquele card não conseguiam se alinhar perfeitamente com as linhas da grade principal.
+                            </li>
+                            <li>
+                                <i>A solução com o Subgrid:</i> Permite que um elemento filho que já faz parte de uma grade também se torne uma grade, herdando e alinhando suas próprias linhas ou colunas diretamente com o layout do elemento pai.
+                            </li>
+                        </ul>
+                </ul>
+            </div>
+    <h2>Principais Vantagens do CSS Grid</h2>
+        <div>
+            <ul>
+                <li>
+                    <strong>Controle Bidimensional:</strong> Gerencia linhas e colunas ao mesmo tempo, ideal para estruturas de páginas complexas e dashboards.
+                </li>
+                <li>
+                    <strong>Unidade Fracional (fr):</strong> Facilita a distribuição proporcional do espaço disponível (ex: grid-template-columns: 1fr 2fr 1fr).
+                </li>
+                <li>
+                    <strong>Áreas Nomeadas (grid-template-areas):</strong> Permite "desenhar" o layout visualmente no código usando apelidos para as seções, tornando a manutenção extremamente simples.
+                </li>
+                <li>
+                    <strong>Menos Código:</strong> Elimina a necessidade de cálculos matemáticos complexos de margens e larguras percentuais ou o uso de hacks antigos. 
+                </li>
+            </ul>
+        </div>
+    <h2>Exemplo Prático de Código</h2>
+    <div>
+        <pre>
+            <code>
+                .pagina-dashboard {
+                    display: grid;
+                    /* Define 3 colunas e 2 linhas */
+                    grid-template-columns: 250px 1fr 1fr;
+                    grid-template-rows: 80px 1fr;
+                    grid-template-areas: 
+                        "sidebar header header"
+                        "sidebar conteudo conteudo";
+                    height: 100vh;
+                    gap: 1rem;
+                }
+
+                    .sidebar { grid-area: sidebar; }
+                    .header { grid-area: header; }
+                    .conteudo { grid-area: conteudo; }
+            </code>
+        </pre>
+    </div>
+        <aside>
+            <p>
+                <strong>Resumo prático:</strong> Use Flexbox quando precisar alinhar itens em uma única direção (uma linha de botões, um menu de navegação). Use Grid quando precisar estruturar o layout macro de uma página ou organizar elementos em uma grade completa de linhas e colunas.
+            </p>
+        </aside>
+    <h2>Flexbox CSS2.1</h2>
+    <p>
+        O CSS 2.1 é uma recomendação antiga da W3C (concluída na década de 2000) focada em conceitos tradicionais de layout, como o fluxo de texto normal, posicionamento (position: relative/absolute), flutuações (float) e tabelas. O Flexbox foi um conceito criado anos depois para resolver as limitações do CSS 2.1.  
+    </p>
+        <ol>
+            <li>Aqui está o que aconteceu na história das especificações:</li>
+        </ol>
+    <div>
+        <ul>
+            <li>
+                <p>
+                    <strong>A Tentativa Antiga (Início dos Anos 2000):</strong> Antes do Flexbox moderno, a W3C tentou criar especificações primitivas para caixas flexíveis (houve rascunhos chamados de CSS Flexible Box Layout Model por volta de 2007–2009 inspirados em ideias antigas de XUL da Mozilla), mas elas nunca chegaram a ser padronizadas no CSS 2.1 e foram descartadas por terem suporte inconsistente e problemas de design.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>O Flexbox Moderno (Level 1):</strong> O Flexbox que usamos hoje foi totalmente reescrito e padronizado pelo W3C Candidate Recommendation para o CSS3 (conhecido oficialmente como CSS Flexible Box Layout Module Level 1), lançado de forma estável pelos navegadores a partir de 2012/2013.
+                </p>
+            </li>
+        </ul>
+    </div>
+        <aside>
+            <p>
+                Portanto, se você ouvir falar de Flexbox associado a versões antigas do CSS, trata-se de rascunhos antigos e obsoletos que foram substituídos pelo padrão moderno que conhecemos hoje.
+            </p>
+        </aside>
+            <div>
+                <p>Block Layout</p>
+                O Block Layout (ou Layout em Bloco) é o modelo de posicionamento padrão do CSS para elementos de nível de bloco, como <pre><code>div, p, section, h1 e ul</code></pre>.
+
+                Ele faz parte do fluxo normal (normal flow) da página e determina como os navegadores organizam esses elementos na tela antes de qualquer estilização avançada como Flexbox ou Grid.
+        <h2>Principais Características do Block Layout</h2>
+            Empilhamento Vertical: Os elementos de bloco são empilhados uns sobre os outros, do topo para a base da página. Cada elemento novo começa obrigatoriamente em uma nova linha abaixo do anterior.
+
+            Largura Total por Padrão: Por padrão, um elemento em bloco ocupa 100% da largura disponível do seu contêiner pai, esticando-se horizontalmente (a menos que uma largura específica seja definida).
+
+            Controle de Altura e Espaçamento: É possível definir propriedades de largura (width), altura (height), margens (margin) e preenchimento (padding) livremente.
+
+            Margens Verticais (Margin Collapse): Um comportamento clássico do Block Layout é que as margens verticais superiores e inferiores de elementos adjacentes podem se fundir (colidir) em uma única margem, em vez de somarem seus valores.
+
+            Exemplo Prático de Código
+                No exemplo abaixo, as três tags <div> são elementos de bloco. Mesmo que haja espaço horizontal suficiente na tela, cada uma empurra a seguinte para a linha de baixo:
+HTML:
+            </div>
+            <div>
+                <p>Inline Layout</p>
+            </div>
+            <div>
+                <p>Table Layout</p>
+            </div>
+            <div>
+                <p>Positioned Layout</p>
+            </div>
+    <h2>Flexbox CSS</h2>
+        <div>
+            <p>Flexible Box Module</p>
+        </div>
+</body>
+</html>
