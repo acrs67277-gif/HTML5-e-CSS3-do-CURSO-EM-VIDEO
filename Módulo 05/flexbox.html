@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com Flexbox CSS</title>
     <style>
-        
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
     </style>
 </head>
 <body>
@@ -86,7 +90,7 @@
                             <li>
                                 <i>A solução com o Subgrid:</i> Permite que um elemento filho que já faz parte de uma grade também se torne uma grade, herdando e alinhando suas próprias linhas ou colunas diretamente com o layout do elemento pai.
                             </li>
-                        </ul>
+                </ull>
                 </ul>
             </div>
     <h2>Principais Vantagens do CSS Grid</h2>
@@ -107,36 +111,36 @@
             </ul>
         </div>
     <h2>Exemplo Prático de Código</h2>
-    <div>
-        <pre>
-            <code>
-                .pagina-dashboard {
-                    display: grid;
-                    /* Define 3 colunas e 2 linhas */
-                    grid-template-columns: 250px 1fr 1fr;
-                    grid-template-rows: 80px 1fr;
-                    grid-template-areas: 
-                        "sidebar header header"
-                        "sidebar conteudo conteudo";
-                    height: 100vh;
-                    gap: 1rem;
-                }
+        <div>
+            <pre>
+                <code>
+                    .pagina-dashboard {
+                        display: grid;
+                        /* Define 3 colunas e 2 linhas */
+                        grid-template-columns: 250px 1fr 1fr;
+                        grid-template-rows: 80px 1fr;
+                        grid-template-areas: 
+                            "sidebar header header"
+                            "sidebar conteudo conteudo";
+                        height: 100vh;
+                        gap: 1rem;
+                    }
 
-                    .sidebar { grid-area: sidebar; }
-                    .header { grid-area: header; }
-                    .conteudo { grid-area: conteudo; }
-            </code>
-        </pre>
-    </div>
+                        .sidebar { grid-area: sidebar; }
+                        .header { grid-area: header; }
+                        .conteudo { grid-area: conteudo; }
+                </code>
+            </pre>
+        </div>
         <aside>
             <p>
                 <strong>Resumo prático:</strong> Use Flexbox quando precisar alinhar itens em uma única direção (uma linha de botões, um menu de navegação). Use Grid quando precisar estruturar o layout macro de uma página ou organizar elementos em uma grade completa de linhas e colunas.
             </p>
         </aside>
     <h2>Flexbox CSS2.1</h2>
-    <p>
-        O CSS 2.1 é uma recomendação antiga da W3C (concluída na década de 2000) focada em conceitos tradicionais de layout, como o fluxo de texto normal, posicionamento (position: relative/absolute), flutuações (float) e tabelas. O Flexbox foi um conceito criado anos depois para resolver as limitações do CSS 2.1.  
-    </p>
+            <p>
+                O CSS 2.1 é uma recomendação antiga da W3C (concluída na década de 2000) focada em conceitos tradicionais de layout, como o fluxo de texto normal, posicionamento (position: relative/absolute), flutuações (float) e tabelas. O Flexbox foi um conceito criado anos depois para resolver as limitações do CSS 2.1.  
+            </p>
         <ol>
             <li>Aqui está o que aconteceu na história das especificações:</li>
         </ol>
@@ -159,29 +163,127 @@
                 Portanto, se você ouvir falar de Flexbox associado a versões antigas do CSS, trata-se de rascunhos antigos e obsoletos que foram substituídos pelo padrão moderno que conhecemos hoje.
             </p>
         </aside>
+    <h2>Block Layout</h2>
+                <p>
+                    O Block Layout (ou Layout em Bloco) é o modelo de posicionamento padrão do CSS para elementos de nível de bloco, como <pre><code>div, p, section, h1 e ul</code></pre>.
+                </p>
+                <p>
+                    Ele faz parte do fluxo normal (normal flow) da página e determina como os navegadores organizam esses elementos na tela antes de qualquer estilização avançada como Flexbox ou Grid.
+                </p>
+    <h2>Principais Características do Block Layout</h2>
             <div>
-                <p>Block Layout</p>
-                O Block Layout (ou Layout em Bloco) é o modelo de posicionamento padrão do CSS para elementos de nível de bloco, como <pre><code>div, p, section, h1 e ul</code></pre>.
-
-                Ele faz parte do fluxo normal (normal flow) da página e determina como os navegadores organizam esses elementos na tela antes de qualquer estilização avançada como Flexbox ou Grid.
-        <h2>Principais Características do Block Layout</h2>
-            Empilhamento Vertical: Os elementos de bloco são empilhados uns sobre os outros, do topo para a base da página. Cada elemento novo começa obrigatoriamente em uma nova linha abaixo do anterior.
-
-            Largura Total por Padrão: Por padrão, um elemento em bloco ocupa 100% da largura disponível do seu contêiner pai, esticando-se horizontalmente (a menos que uma largura específica seja definida).
-
-            Controle de Altura e Espaçamento: É possível definir propriedades de largura (width), altura (height), margens (margin) e preenchimento (padding) livremente.
-
-            Margens Verticais (Margin Collapse): Um comportamento clássico do Block Layout é que as margens verticais superiores e inferiores de elementos adjacentes podem se fundir (colidir) em uma única margem, em vez de somarem seus valores.
-
-            Exemplo Prático de Código
+                <ul>
+                    <li>
+                        <strong>Empilhamento Vertical:</strong> Os elementos de bloco são empilhados uns sobre os outros, do topo para a base da página. Cada elemento novo começa obrigatoriamente em uma nova linha abaixo do anterior.
+                    </li>
+                    <li>
+                        <strong>Largura Total por Padrão:</strong> Por padrão, um elemento em bloco ocupa 100% da largura disponível do seu contêiner pai, esticando-se horizontalmente (a menos que uma largura específica seja definida).
+                    </li>
+                    <li>
+                        <strong>Controle de Altura e Espaçamento:</strong> É possível definir propriedades de largura (width), altura (height), margens (margin) e preenchimento (padding) livremente.
+                    </li>
+                    <li>
+                        <strong>Margens Verticais (Margin Collapse):</strong> Um comportamento clássico do Block Layout é que as margens verticais superiores e inferiores de elementos adjacentes podem se fundir (colidir) em uma única margem, em vez de somarem seus valores.
+                    </li>
+                </ul>
+            </div>
+    <h3>Exemplo Prático de Código</h3>
+            <p>
                 No exemplo abaixo, as três tags <div> são elementos de bloco. Mesmo que haja espaço horizontal suficiente na tela, cada uma empurra a seguinte para a linha de baixo:
-HTML:
+            </p>
+            <div>
+                <pre>
+                    <code>
+                        <div class="bloco-1"><strong>Primeiro Bloco</strong></div>
+                        <div class="bloco-2"><strong>Segundo Bloco</strong></div>
+                        <div class="bloco-3"><strong>Terceiro Bloco</strong></div>
+                    </code> 
+                </pre>
+            </div>
+<strong>HTML:</strong>
+<br><br>
+<strong>CSS:</strong>
+        <div>
+            <pre>
+                <code>
+                    div {
+                        background-color: #3498db;
+                        color: white;
+                        padding: 20px;
+                        margin-bottom: 10px; /* Espaço empilhado entre eles */
+                    }
+                </code>
+            </pre>
+        </div>
+            <p>
+                <strong>Contexto Histórico:</strong> Antes do Flexbox, do Grid e até mesmo dos truques com float, o Block Layout (combinado com o Inline Layout para textos) era a única forma básica de estruturar páginas web no CSS 2.1. Hoje, ele ainda é a base fundamental onde qualquer outro modelo de layout é aplicado.
+            </p>
+            <div>
+        <h2>Inline Layout</h2>
+                <div>
+                    <p>
+                        O Inline Layout (ou Layout em Linha) é o modelo de posicionamento do CSS usado para gerenciar elementos que fluem junto com o texto, como <code>span, a, strong, em</code> e imagens inseridas no meio de um parágrafo (<code>img</code>).
+                    </p>
+                    <p>
+                        Enquanto o Block Layout empilha as coisas verticalmente, o Inline Layout organiza os elementos na horizontal, lado a lado, respeitando o fluxo natural de leitura (da esquerda para a direita, em idiomas ocidentais).
+                    </p>
+        <h2>Principais Características do Inline Layout</h2>
+                <div>
+                    <ul>
+                        <li>
+                            <strong>Fluxo Contínuo:</strong> Os elementos em linha não quebram a linha por conta própria. Eles ficam um ao lado do outro e, quando chegam ao final da tela, o navegador automaticamente joga o restante para a linha de baixo (quebra de linha automática).
+                        </li>
+                        <li>
+                            <strong>Largura e Altura Dinâmicas:</strong> Você não pode definir larguras (width) ou alturas (height) diretamente em elementos estritamente inline. O tamanho deles se ajusta automaticamente ao conteúdo que contêm (seja texto ou uma imagem).
+                        </li>
+                    <h2>Comportamento das Margens e Preenchimento:</h2>
+                            <ul>
+                                <li>
+                                    As margens e preenchimentos horizontais (padding-left, margin-right, etc.) funcionam perfeitamente e empurram os vizinhos.
+                                </li>
+                                <li>
+                                    As margens e preenchimentos verticais (padding-top, margin-top, etc.) não alteram a altura da linha onde o elemento está; eles podem até aparecer visualmente na tela, mas vão invadir ou sobrepor as linhas acima e abaixo sem empurrá-las.
+                                </li>
+                                <li>
+                                    <i>Espaços em Branco:</i> No HTML, quebras de linha e espaços múltiplos entre tags inline no código-fonte contam como um espaço real na renderização da página.
+                                </li>
+                            </ul>
+                    </ul>
+                </div>
+                <p>
+                    No exemplo abaixo, as tags <code>span</code> e <code>a</code> são inline. Elas ficam lado a lado no meio do parágrafo:
+                </p>
+                <h2>Exemplo Prático de Código</h2>
+                    HTML:
+                        <pre>
+                            <code>
+                                <p>
+                                    Este é um parágrafo com <span class="destaque">texto destacado</span> e um 
+                                    <a href="#">link importante</a> bem no meio dele.
+                                </p>
+                            </code>
+                        </pre>
+                    CSS:
+                        <pre>
+                            <code>
+                                .destaque {
+                                    background-color: #f1c40f;
+                                    padding: 2px 6px; /* Funciona bem na horizontal */
+                                    }
+
+                                    a {
+                                    color: #2980b9;
+                                    font-weight: bold;
+                                }
+                            </code>
+                        </pre>
+                </div>
+                <p>
+                    <strong>O meio-termo (inline-block):</strong> Muitas vezes, queremos que um elemento fique lado a lado como um elemento inline, mas ainda assim aceite larguras, alturas e margens verticais completas. Para isso, usamos o <strong>display: inline-block</strong>, que combina o melhor dos dois mundos (Block e Inline).
+                </p>
             </div>
             <div>
-                <p>Inline Layout</p>
-            </div>
-            <div>
-                <p>Table Layout</p>
+                <h2>Table Layout</h2>
             </div>
             <div>
                 <p>Positioned Layout</p>
