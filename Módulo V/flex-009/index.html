@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        div.conteiner {
+            background-color: blueviolet;
+            display: flex;
+            flex-flow: row wrap;
+            /*flex-direction: row;*/
+            /*justify-content: space-evenly;*/
+        }
+
+        div.item {
+            background-color: #00bfff;
+            color: #554e4e;
+            /* padding: 5px; */
+            border: 2px solid black;
+            
+            text-align: center;
+            flex-basis: 150px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fa00e5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade flex-basis em Flexbox</h1>
+    <div class="conteiner">
+        <div class="item">Kw-453</div>
+        <div class="item">Aló, Novo Mundo!</div>
+        <div class="item">kkk</div>
+        <div class="item">Aprendendo HTML e CSS</div>
+        <div class="item">Interstellar</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">G-999--hgjut00</div>
+    </div>
+</body>
+</html>
