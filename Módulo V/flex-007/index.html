@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        div.conteiner {
+            background-color: blueviolet;
+            display: flex;
+            flex-wrap: row wrap;
+        }
+
+        div.item {
+            background-color: #ce0d0d;
+            color: #00ff00;
+            border: 2px solid black;
+            border-radius: 50%;
+            /*flex: auto;*/
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1 {
+            order: -4;
+        }
+
+        div#i2 {
+            order: -4;
+        }
+
+        div#i3 {
+            order: -4;
+        }
+
+        div#i4 {
+            order: -4;
+        }
+
+        div#i5 {
+            order: -4;
+        }
+
+        div#i6 {
+            order: -4;
+        }
+
+        div#i7 {
+            order: -4;
+        }
+
+        div#i8 {
+            order: 6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anotomia dos itens Flexbox</h1>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">l</div>
+        <div class="item" id="i3">o</div>
+        <div class="item" id="i4">M</div>
+        <div class="item" id="i5">u</div>
+        <div class="item" id="i6">n</div>
+        <div class="item" id="i7">d</div>
+        <div class="item" id="i8">o</div>
+    </div>
+</body>
+</html>
