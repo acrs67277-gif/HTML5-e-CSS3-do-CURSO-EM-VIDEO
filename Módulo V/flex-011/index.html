@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        div.conteiner {
+            background-color: blueviolet;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: #000000;
+            color: #ffd902;
+            border: 1px solid #09ff00;
+            text-align: center;
+            
+        }
+        /* */
+        /* 
+            Simplificaçoes:
+            flex = flex-grow + flex-shrink + flex-basis
+                flex: 0 1 auto; => valor padrão
+                flex: initial; => valor padrão
+                -------------------------------
+                flex: 0 0 auto;
+                flex: 0 0 auto; => não cresce e não encolhe
+                -------------------------------
+                flex: 0 0 auto;
+                flex: none;
+                -------------------------------
+                flex: 1 1 auto;
+                flex: auto;
+                -------------------------------
+                flex: 3;
+                flex: 3 1 auto;
+        */
+        div#caixa-1 {
+            flex: 1 0 200px;
+        }
+
+        div#caixa-2 {
+            flex: 1 1 150px;
+        }
+
+        div#caixa-3 {
+            flex: 1 3 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle do tamanho de itens flexíveis</h1>
+    <div class="conteiner">
+        <div class="item" id="caixa-1">Lorem-1</div>
+        <div class="item" id="caixa-2">Lorem-2</div>
+        <div class="item" id="caixa-3">Lorem-3</div>
+    </div>
+</body>
+</html>
